@@ -1,0 +1,383 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesi.tex
+% !TEX spellcheck = it-IT
+
+%************************************************
+\chapter{Codice SQL}
+\label{cap:codice-sql}
+%************************************************
+
+\section{DDL}
+Si riporta il codice SQL (estrapolato da phpMyAdmin) utilizzato per creare le tabelle che costituiscono la base di dati e i vincoli di integrità referenziale.
+
+\subsection{UTENTE\_AMMINISTRATORE}
+Struttura della tabella \emph{UTENTE\_AMMINISTRATORE}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `UTENTE_AMMINISTRATORE` (
+	`Email` VARCHAR(100) NOT NULL,
+	`Email_UAS` VARCHAR(100) NOT NULL DEFAULT 'admin@bins.com',
+	`Password` VARCHAR(32) NOT NULL,
+	`Data_di_registrazione` TIMESTAMP NOT NULL,
+	`Attivo` BOOLEAN NOT NULL DEFAULT TRUE,
+	`Nome` VARCHAR(50) NOT NULL,
+	`Cognome` VARCHAR(50) NOT NULL,
+	`Data_di_nascita` DATE NOT NULL,
+	`SSN` VARCHAR(16) NOT NULL,
+	PRIMARY KEY (`Email`),
+	FOREIGN KEY (`Email_UAS`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{UTENTE\_REGISTRATO}
+Struttura della tabella \emph{UTENTE\_REGISTRATO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `UTENTE_REGISTRATO` (
+	`Email` VARCHAR(100) NOT NULL,
+	`Email_UA` VARCHAR(100) NOT NULL DEFAULT 'admin@bins.com',
+	`Password` VARCHAR(32) NOT NULL,
+	`Data_di_registrazione` TIMESTAMP NOT NULL,
+	`Attivo` BOOLEAN NOT NULL DEFAULT TRUE,
+	`Nome` VARCHAR(50) NOT NULL,
+	`Cognome` VARCHAR(50) NOT NULL,
+	`Data_di_nascita` DATE NOT NULL,
+	`SSN` VARCHAR(16) NOT NULL,
+	PRIMARY KEY (`Email`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{FATTURA}
+Struttura della tabella \emph{FATTURA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `FATTURA` (
+	`Id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`PIVA` VARCHAR(16) NOT NULL,
+	`Denominazione` VARCHAR(100) NOT NULL,
+	`Nazione` VARCHAR(50) NOT NULL,
+	`Provincia` VARCHAR(50) NOT NULL,
+	`Citta` VARCHAR(50) NOT NULL,
+	`CAP` VARCHAR(5) NOT NULL,
+	`Via` VARCHAR(100) NOT NULL,
+	`Numero_civico` VARCHAR(10) NOT NULL,
+	`Numero_di_telefono` VARCHAR(30) NOT NULL,
+	`Importo` DOUBLE(8,2) UNSIGNED NOT NULL DEFAULT '0.00',
+	`Data` TIMESTAMP NOT NULL,
+	PRIMARY KEY (`Id`)
+) ENGINE = InnoDB AUTO_INCREMENT=1;
+\end{lstlisting}
+
+\subsection{PAGAMENTO}
+Struttura della tabella \emph{PAGAMENTO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `PAGAMENTO` (
+	`Id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`Id_F` INT UNSIGNED NOT NULL,
+	`Data_pagamento` TIMESTAMP NOT NULL,
+	`Importo` DOUBLE(8,2) UNSIGNED NOT NULL DEFAULT '0.00',
+	PRIMARY KEY (`Id`),
+	FOREIGN KEY (`Id_F`) REFERENCES FATTURA(`Id`)
+) ENGINE = InnoDB AUTO_INCREMENT=1;
+\end{lstlisting}
+
+\subsection{ORDINE}
+Struttura della tabella \emph{ORDINE}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `ORDINE` (
+	`Id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`Email_UA` VARCHAR(100) NOT NULL,
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Id_P` INT UNSIGNED NOT NULL,
+	`Data` TIMESTAMP NOT NULL,
+	PRIMARY KEY (`Id`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`),
+	FOREIGN KEY (`Id_P`) REFERENCES PAGAMENTO(`Id`)
+) ENGINE = InnoDB AUTO_INCREMENT=1;
+\end{lstlisting}
+
+\subsection{TRACKING}
+Struttura della tabella \emph{TRACKING}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `TRACKING` (
+	`Id_O` INT UNSIGNED NOT NULL,
+	`Stato` VARCHAR(100) NOT NULL,
+	`Data` TIMESTAMP NOT NULL,
+	PRIMARY KEY (`Id_O`),
+	FOREIGN KEY (`Id_O`) REFERENCES ORDINE(`Id`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{INDIRIZZO\_DI\_SPEDIZIONE}
+Struttura della tabella \emph{INDIRIZZO\_DI\_SPEDIZIONE}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `INDIRIZZO_DI_SPEDIZIONE` (
+	`Id_O` INT UNSIGNED NOT NULL,
+	`Tipo` VARCHAR(20) NOT NULL,
+	`Costo` DOUBLE(8,2) UNSIGNED NOT NULL DEFAULT '0.00',
+	`Nome_e_cognome` VARCHAR(100) NOT NULL,
+	`Nazione` VARCHAR(50) NOT NULL,
+	`Provincia` VARCHAR(50) NOT NULL,
+	`Citta` VARCHAR(50) NOT NULL,
+	`CAP` VARCHAR(5) NOT NULL,
+	`Via` VARCHAR(100) NOT NULL,
+	`Numero_civico` VARCHAR(10) NOT NULL,
+	`Numero_di_telefono` VARCHAR(30) NOT NULL,
+	`Note` TEXT(1000),
+	PRIMARY KEY (`Id_O`),
+	FOREIGN KEY (`Id_O`) REFERENCES ORDINE(`Id`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{LISTA\_DELLA\_SPESA}
+Struttura della tabella \emph{LISTA\_DELLA\_SPESA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `LISTA_DELLA_SPESA` (
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Nome` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`Email_UR`, `Nome`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\newpage
+
+\subsection{CARRELLO}
+Struttura della tabella \emph{CARRELLO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `CARRELLO` (
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Totale_numero_prodotti` INT UNSIGNED NOT NULL,
+	`Prezzo_Totale` DOUBLE(8,2) UNSIGNED NOT NULL DEFAULT '0.00',
+	PRIMARY KEY (`Email_UR`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{INDIRIZZO}
+Struttura della tabella \emph{INDIRIZZO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `INDIRIZZO` (
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Nome` VARCHAR(50) NOT NULL,
+	`Nazione` VARCHAR(50) NOT NULL,
+	`Provincia` VARCHAR(50) NOT NULL,
+	`Citta` VARCHAR(50) NOT NULL,
+	`CAP` VARCHAR(5) NOT NULL,
+	`Via` VARCHAR(100) NOT NULL,
+	`Numero_civico` VARCHAR(10) NOT NULL,
+	`Numero_di_telefono` VARCHAR(30) NOT NULL,
+	PRIMARY KEY (`Email_UR`, `Nome`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{RICETTA}
+Struttura della tabella \emph{RICETTA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `RICETTA` (
+	`Nome` VARCHAR(50) NOT NULL,
+	`Autore` VARCHAR(50) NOT NULL,
+	`Email_UA` VARCHAR(50) NOT NULL,
+	`Tempo_di_preparazione` TIME NOT NULL,
+	`Preparazione` TEXT(22000) NOT NULL,
+	`Attiva` BOOLEAN NOT NULL DEFAULT TRUE,
+	PRIMARY KEY (`Nome`, `Autore`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\newpage
+
+\subsection{MARCHIO}
+Struttura della tabella \emph{MARCHIO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `MARCHIO` (
+	`Nome` VARCHAR(50) NOT NULL,
+	`Email_UA` VARCHAR(50) NOT NULL,
+	`Descrizione` TEXT(2000) NOT NULL,
+	`Immagine` VARCHAR(100) NOT NULL,
+	PRIMARY KEY (`Nome`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{CARATTERISTICA}
+Struttura della tabella \emph{CARATTERISTICA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `CARATTERISTICA` (
+	`Nome` VARCHAR(50) NOT NULL,
+	`Email_UA` VARCHAR(50) NOT NULL,
+	`Descrizione` TEXT(2000) NOT NULL,
+	PRIMARY KEY (`Nome`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{REPARTO}
+Struttura della tabella \emph{REPARTO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `REPARTO` (
+	`Nome` VARCHAR(50) NOT NULL,
+	`Email_UA` VARCHAR(50) NOT NULL,
+	`Descrizione` TEXT(2000) NOT NULL,
+	PRIMARY KEY (`Nome`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\newpage
+
+\subsection{COUPON}
+Struttura della tabella \emph{COUPON}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `COUPON` (
+	`Id` INT UNSIGNED NOT NULL,	
+	`Email_UA` VARCHAR(50) NOT NULL,
+	`Email_UR` VARCHAR(50) NOT NULL,
+	`Ente_erogatore` VARCHAR(50) NOT NULL,
+	`Importo` DOUBLE(8,2) NOT NULL DEFAULT '0.00',
+	PRIMARY KEY (`Id`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{PRODOTTO}
+Struttura della tabella \emph{PRODOTTO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `PRODOTTO` (
+	`EAN` VARCHAR(13) NOT NULL,
+	`Nome_M` VARCHAR(50) NOT NULL,
+	`Nome_R` VARCHAR(50) NOT NULL,
+	`Data_inserimento` TIMESTAMP NOT NULL,
+	`Attivo` BOOLEAN NOT NULL DEFAULT TRUE,
+	`Nome` VARCHAR(100) NOT NULL,
+	`Descrizione` TEXT(2000) NOT NULL,
+	`Disponibilita` INT UNSIGNED NOT NULL,
+	`Peso` INT UNSIGNED NOT NULL,
+	`Prezzo_unitario` DOUBLE(8,2) UNSIGNED NOT NULL DEFAULT '0.00',
+	`Immagine` VARCHAR(100) NOT NULL,
+	PRIMARY KEY (`EAN`),
+	FOREIGN KEY (`Nome_M`) REFERENCES MARCHIO(`Nome`),
+	FOREIGN KEY (`Nome_R`) REFERENCES RICETTA(`Nome`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{SCADENZA}
+Struttura della tabella \emph{SCADENZA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `SCADENZA` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Data_di_scadenza` DATE NOT NULL ,
+	`Quantita` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`EAN_P`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{HA\_PARTICOLARE}
+Struttura della tabella \emph{HA\_PARTICOLARE}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `HA_PARTICOLARE` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Nome_C` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Nome_C`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Nome_C`) REFERENCES CARATTERISTICA(`Nome`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{IMPIEGATO\_IN}
+Struttura della tabella \emph{IMPIEGATO\_IN}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `IMPIEGATO_IN` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Nome_R` VARCHAR(50) NOT NULL,
+	`Autore_R` VARCHAR(100) NOT NULL,
+	`Quantita` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Nome_R`, `Autore_R`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Nome_R`,`Autore_R`) REFERENCES RICETTA(`Nome`,`Autore`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{CONTENUTO\_IN\_LISTA}
+Struttura della tabella \emph{CONTENUTO\_IN\_LISTA}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `CONTENUTO_IN_LISTA` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Nome_L` VARCHAR(50) NOT NULL,
+	`Quantita` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Email_UR`, `Nome_L`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Email_UR`,`Nome_L`) REFERENCES LISTA_DELLA_SPESA(`Email_UR`,`Nome`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\newpage
+
+\subsection{CONTENUTO\_IN\_CARRELLO}
+Struttura della tabella \emph{CONTENUTO\_IN\_CARRELLO}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `CONTENUTO_IN_CARRELLO` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Email_UR` VARCHAR(100) NOT NULL,
+	`Quantita` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Email_UR`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Email_UR`) REFERENCES UTENTE_REGISTRATO(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{COMPONE}
+Struttura della tabella \emph{COMPONE}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `COMPONE` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Id_O` INT UNSIGNED NOT NULL,
+	`Quantita` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Id_O`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Id_O`) REFERENCES ORDINE(`Id`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\subsection{GESTISCE\_PRODOTTI}
+Struttura della tabella \emph{GESTISCE\_PRODOTTI}:
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `GESTISCE_PRODOTTI` (
+	`EAN_P` VARCHAR(13) NOT NULL,
+	`Email_UA` VARCHAR(100) NOT NULL,
+	PRIMARY KEY (`EAN_P`, `Email_UA`),
+	FOREIGN KEY (`EAN_P`) REFERENCES PRODOTTO(`EAN`),
+	FOREIGN KEY (`Email_UA`) REFERENCES UTENTE_AMMINISTRATORE(`Email`)
+) ENGINE = InnoDB;
+\end{lstlisting}
+
+\section{Interrogazioni}
+Tra le molte interrogazioni utilizzate dall'applicazione web riguardo il database precedente si riportano quelle che meritano un commento.
