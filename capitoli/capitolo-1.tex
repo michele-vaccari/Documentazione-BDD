@@ -1,0 +1,74 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesi.tex
+% !TEX spellcheck = it-IT
+
+%************************************************
+\chapter{Specifiche progetto}
+\label{cap:specifiche-progetto}
+%************************************************
+
+\section{Caratteristiche del sistema}
+Si vuole progettare un'applicazione web per la vendita on line dei prodotti di un supermercato.
+L'applicazione deve avere un frontend multilingue (italiano e inglese).
+
+I prodotti del supermercato sono suddivisi in reparti (ortofrutta, macelleria, accessori per la casa, cura della persona, ecc.) e ogni prodotto può avere una data di scadenza.
+
+L'applicazione web deve avere le seguenti caratteristiche:
+
+\begin{enumerate}
+		
+	\item
+		\label{f-up}
+		Possibilità di visualizzare il catalogo dei prodotti, navigabile per reparto, caratteristiche, marchio, data di scadenza, ricerca libera, ecc.
+		Possibilità di vedere il singolo prodotto con tutti i dettagli;
+		
+	\item
+		Possibilità di inserire prodotti nel carrello e di effettuare l'acquisto di più prodotti in diverse quantità.
+		Predisporre la gestione dei prezzi, del totale carrello, la gestione della disponibilità di magazzino, impedendo di poter acquistare quantità non disponibili e prodotti scaduti;
+		
+	\item
+		Gestione di una o più shopping list (lista della spesa);
+		
+	\item
+		Possibilità di inserire o selezionare un indirizzo di consegna da una rubrica personale, di simulare il pagamento e di confermare l'ordine;
+		
+	\item
+		Possibilità di visualizzare lo stato dell'ordine e lo storico degli ordini effettuati;
+		
+	\item
+		\label{ef-ur}
+		Gestione di coupon o buoni sconto in fase di acquisto, possibilità di visualizzare il traking dell'ordine in consegna;
+		
+	\item
+		\label{sf-ua}
+		Possibilità di gestire il catalogo (inserimento, modifica, blocco prodotti), i reparti, i brand, ecc.
+		Possibilità di gestire la disponibilità di magazzino;
+	
+	\item
+		Gestione di prodotti in push (per cui spingere la vendita) con inserimento in una "vetrina in home page" o in un'area promo;
+	
+	\item
+		Possibilità di visualizzare gli utenti, verificare il numero degli ordini per utente, bloccare eventuali utenti, gestire gli altri utenti amministratori;
+	
+	\item
+		Gestione dei coupon o buoni sconto;
+	
+	\item
+		\label{ef-ua}
+		Gestione del tracking dell'ordine, con simulazione di tutti i cambi di stato (consegnato al corriere, in viaggio, consegnato al destinatario, ecc.);
+		
+\end{enumerate}
+
+\section{Utenti del sistema}
+Il sistema prevede che le categorie di utenti sia così rappresentata:
+
+\begin{description}
+	
+	\item[Utenti pubblici] Possono effettuare solo il punto \ref{f-up} ed eventualmente registrarsi.
+	
+	\item[Utenti registrati] Possono effettuare i punti dal \ref{f-up} al \ref{ef-ur} compresi.
+	
+	\item[Amministratori] Possono effettuare i punti dal \ref{sf-ua} al \ref{ef-ua} compresi.
+	
+\end{description}

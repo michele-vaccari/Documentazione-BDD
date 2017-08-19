@@ -1,0 +1,117 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\defcounter {refsection}{0}\relax 
+\vspace {-\cftbeforechapskip }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Specifiche progetto}}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Caratteristiche del sistema}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Utenti del sistema}{2}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Diagramma E-R}}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Descrizione delle entit\IeC {\`a}}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Prodotto}{3}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Utente Amministratore}{4}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Utente Registrato}{4}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Ordine}{4}{subsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.5}Pagamento}{4}{subsection.2.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.6}Fattura}{4}{subsection.2.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.7}Ricetta}{4}{subsection.2.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.8}Marchio}{4}{subsection.2.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.9}Caratteristica}{4}{subsection.2.1.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.10}Reparto}{4}{subsection.2.1.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.11}Coupon}{4}{subsection.2.1.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Descrizione delle associazioni}{4}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Il modello E-R completo}{4}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello relazionale}}{6}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}L'algoritmo di traduzione}{6}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Traduzione di entit\IeC {\`a}}{6}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Traduzione di entit\IeC {\`a} deboli}{7}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Traduzione di associazioni binarie 1:1}{7}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Traduzione di associazioni binarie 1:N}{7}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Traduzione di associazioni binarie N:M}{7}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Normalizzazione}}{8}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Elenco entit\IeC {\`a}}{8}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Codice SQL}}{9}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}DDL}{9}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}UTENTE\_AMMINISTRATORE}{9}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}UTENTE\_REGISTRATO}{9}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}FATTURA}{10}{subsection.5.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.4}PAGAMENTO}{10}{subsection.5.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.5}ORDINE}{10}{subsection.5.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.6}TRACKING}{11}{subsection.5.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.7}INDIRIZZO\_DI\_SPEDIZIONE}{11}{subsection.5.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.8}LISTA\_DELLA\_SPESA}{11}{subsection.5.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.9}CARRELLO}{12}{subsection.5.1.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.10}INDIRIZZO}{12}{subsection.5.1.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.11}RICETTA}{12}{subsection.5.1.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.12}MARCHIO}{13}{subsection.5.1.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.13}CARATTERISTICA}{13}{subsection.5.1.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.14}REPARTO}{13}{subsection.5.1.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.15}COUPON}{14}{subsection.5.1.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.16}PRODOTTO}{14}{subsection.5.1.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.17}SCADENZA}{14}{subsection.5.1.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.18}HA\_PARTICOLARE}{15}{subsection.5.1.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.19}IMPIEGATO\_IN}{15}{subsection.5.1.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.20}CONTENUTO\_IN\_LISTA}{15}{subsection.5.1.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.21}CONTENUTO\_IN\_CARRELLO}{16}{subsection.5.1.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.22}COMPONE}{16}{subsection.5.1.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.23}GESTISCE\_PRODOTTI}{16}{subsection.5.1.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Interrogazioni}{16}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Interfaccia grafica}}{17}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Elenco entit\IeC {\`a}}{17}{section.6.1}

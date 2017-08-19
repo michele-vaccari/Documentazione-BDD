@@ -1,0 +1,124 @@
+              %******************************************%
+              %                                          %
+              % Modello di tesi di laurea o di dottorato %
+              %            di Lorenzo Pantieri           %
+              %                                          %
+              %                © 2013-2017               %
+              %                                          %
+              %******************************************%
+       
+
+% I seguenti commenti speciali impostano:
+% 1. utf8 come codifica di input,
+% 2. PDFLaTeX come motore di composizione;
+% 3. Tesi.tex come documento principale;
+% 4. il controllo ortografico italiano per l'editor.
+
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = pdflatex
+% !TEX root = Tesi.tex
+% !TEX spellcheck = it-IT
+
+\documentclass[11pt,%                      % corpo del font principale
+               a4paper,%                   % carta A4
+%              twoside,openright,%         % fronte-retro
+               oneside,openany,%           % solo fronte
+               titlepage,%                 % frontespizio
+               headinclude,,footinclude,%  % testatina e piede di pagina
+               BCOR5mm,%                   % rilegatura di 5 mm
+               cleardoublepage=empty,%     % pagine vuote senza testatina e piede di pagina
+               captions=tableheading,%     % didascalie in cima alle tabelle
+               ]{scrreprt}                 % classe report di KOMA-Script;
+               
+\usepackage[T1]{fontenc}                   % codifica dei font:
+                                           % NOTA BENE! richiede una distribuzione *completa* di LaTeX,
+                                           % per esempio TeXLive o MiKTeX *complete*
+
+\usepackage[utf8]{inputenc}                % codifica di input; anche [latin1] va bene
+                                           % NOTA BENE! va accordata con le preferenze dell'editor
+
+\usepackage[english,italian]{babel}        % per scrivere in italiano e in inglese;
+                                           % l'ultima lingua (l'italiano) risulta predefinita
+
+\usepackage[suftesi]{frontespizio}         % frontespizo
+                                           % per includerlo nel documento bisogna:
+                                           % 1. compilare una prima volta Tesi.tex;
+                                           % 2. compilare a parte Tesi-frn.tex, generato dalla compilazione precedente;
+                                           % 3. compilare ancora Tesi.tex. 
+
+%\usepackage{indentfirst}                   % rientra il primo capoverso di ogni sezione
+
+\usepackage{graphicx}                      % immagini
+
+\usepackage{listings}                      % codici
+
+\usepackage[font=small]{quoting}           % citazioni
+
+\usepackage{amsmath,amssymb,amsthm}        % matematica
+
+\usepackage[italian]{varioref}             % riferimenti completi della pagina
+
+\usepackage{tabularx}                      % tabelle di larghezza prefissata
+
+\usepackage[autostyle,italian=guillemets]{csquotes} % virgolette ottimizzate per biblatex
+
+\usepackage[style=philosophy-modern,hyperref,square,backend=biber]{biblatex}
+                                           % eccellente pacchetto per la bibliografia;
+                                           % produce uno stile di citazione autore-anno; 
+                                           % lo stile "numeric-comp" produce riferimenti numerici;
+                                           % NOTA BENE! bisogna che il proprio editor sia configurato per biber
+                                          
+\addbibresource{Bibliografia.bib}          % database di biblatex 
+                                          
+\usepackage{subfig}                        % sottofigure, sottotabelle
+
+\usepackage{lipsum}                        % testo fittizio
+
+\usepackage{eurosym}                       % simbolo dell'euro
+
+\usepackage[eulerchapternumbers,%          % numeri dei capitoli nel font Euler
+            subfig,%                       % se si usa il pacchetto subfig
+            beramono,%                     % Bera Mono come font a spaziatura fissa
+            eulermath,%                    % AMS Euler come font per la matematica
+            pdfspacing,%                   % migliora il riempimento di riga
+            listings,%                     % codici
+%           parts,%                        % da decommentare in un documento diviso in parti
+            ]{classicthesis}               % stile ClassicThesis
+
+\usepackage{arsclassica}                   % modifica l'aspetto di ClassicThesis
+
+\input{impostazioni-tesi}                  % file con le impostazioni personali
+
+
+\begin{document}
+\pagestyle{scrheadings} 
+\pagenumbering{roman}
+%******************************************************************
+% Materiale iniziale
+%******************************************************************
+\input{materialeInizialeFinale/Frontespizio}
+\input{materialeInizialeFinale/Colophon}
+%\input{MaterialeInizialeFinale/Dedica}
+\input{materialeInizialeFinale/Indici}
+%\input{MaterialeInizialeFinale/Sommario+Abstract}
+%\input{MaterialeInizialeFinale/Ringraziamenti}
+\input{materialeInizialeFinale/Introduzione}
+\cleardoublepage
+%******************************************************************
+% Materiale principale
+%******************************************************************
+\pagenumbering{arabic}
+\input{capitoli/capitolo-1}   % specifiche del progetto
+\input{capitoli/capitolo-2}   % progettazione del diagramma ER
+\input{capitoli/capitolo-3}   % traduzione del modello ER in modello relazionale
+\input{capitoli/capitolo-4}   % normalizzazione del modello relazionale
+\input{capitoli/capitolo-5}   % codice SQL
+\input{capitoli/capitolo-6}   % interfaccia grafica
+%\appendix
+%\input{capitoli/Dolor}
+% *****************************************************************
+% Materiale finale
+%******************************************************************
+%\input{materialeInizialeFinale/Bibliografia}
+%\input{materialeInizialeFinale/Dichiarazione}
+\end{document}
