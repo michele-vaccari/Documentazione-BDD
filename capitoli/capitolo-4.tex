@@ -8,5 +8,111 @@
 \label{cap:normalizzazione}
 %************************************************
 
-\section{Elenco entità}
-bla bla bla\dots{}
+\section{Cenni teorici}
+Per normalizzazione si intende il procedimento che ha lo scopo di eliminare la ridondanza e le eventuali incoerenze del database.
+Il processo di normalizzazione sottopone uno schema relazionale a una serie di test per certificare se soddisfa una data forma normale.
+
+	\subsection{Prima forma normale (1NF)}
+	Si dice che uno schema relazionale è in prima forma normale se il dominio di un attributo comprende valori atomici e se il valore di un qualsiasi attributo in una tupla sia un singolo valore del dominio, ovvero:
+	\begin{itemize}
+		
+		\item
+		Tutte le righe della tabella contengono lo stesso numero di colonne;
+		
+		\item
+		Gli attributi rappresentano informazioni elementari;
+		
+		\item
+		I valori che compaiono in una colonna sono dello stesso tipo, cioè appartengono allo stesso dominio;
+		
+		\item
+		Ogni riga è diversa da tutte le altre, cioè non ce ne possono essere due con gli stessi valori nelle colonne;
+		
+		\item
+		L'ordine con il quale le righe compaiono nella tabella è irrilevante.
+		
+	\end{itemize}
+	La prima forma normale ($1NF$) è già parte integrante della definizione formale di relazione nel modello relazionale.
+	
+	\subsection{Seconda forma normale (2NF)}
+	Si dice che uno schema relazionale è in seconda forma normale ($2NF$) quando è in prima forma normale ($1NF$) e tutti i suoi attributi non-chiave dipendono dall'intera chiave, cioè non possiede attributi che dipendono soltanto da una parte della chiave.
+	
+	La seconda forma normale elimina la dipendenza parziale degli attributi dalla chiave e riguarda il caso di relazioni con chiavi composte, cioè formate da più attributi.
+	
+	\subsection{Terza forma normale (3NF)}
+	Si dice che uno schema relazionale è in terza forma normale ($3NF$) quando è in seconda forma normale ($2NF$) e tutti i suoi attributi non-chiave dipendono direttamente dalla chiave, cioè non possiede attributi non-chiave che dipendono da altri attributi non-chiave.
+	
+	La terza forma normale elimina la dipendenza transitiva degli attributi dalla chiave.
+	
+\section{Processo di normalizzazione}
+Partendo dalla figura~\vref{f:trad-assoc-m-n}, si analizzano le varie chiavi e le varie dipendenze funzionali per ridurre lo schema relazionale precedentemente descritto in $2NF$ e in $3NF$.\\
+\\
+Si analizza la relazione FATTURA e si nota che essa risulta essere già in seconda forma normale ($2NF$);
+infatti essendoci un solo attributo chiave (\emph{Id}) tutti gli altri attributi dipendono funzionalmente da quest'ultimo.
+Infine non essendoci dipendenze funzionali transitive, tale relazione risulta essere anche in terza forma normale ($3NF$).
+
+Lo stesso ragionamento si può applicare alle relazioni SCADENZA, INDIRIZZO\_DI\_SPEDIZIONE e TRACKING. \\
+\\
+Si considerano ora le seguenti relazioni:
+\begin{itemize}
+	
+	\item
+	MARCHIO
+	
+	\item
+	CARATTERISTICA
+	
+	\item
+	REPARTO
+	
+	\item
+	UTENTE\_REGISTRATO
+	
+	\item
+	PAGAMENTO
+	
+\end{itemize}
+Tutte le relazioni sono formate da un unico attributo chiave e da una chiave esterna, pertanto risultano essere in $3NF$.\\
+\\
+La relazione UTENTE\_AMMINISTRATORE è formata da un'unico attributo chiave e presenta l'attributo \emph{Email\_USA} non-primo che dipendende funzionalmente, direttamente e completamente dalla chiave;
+quindi ne segue che la relazione è in $3NF$.\\
+\\
+Si considerano ora le seguenti relazioni:
+\begin{itemize}
+	
+	\item
+	PRODOTTO
+	
+	\item
+	COUPON
+	
+\end{itemize}
+Entrambe le relazioni sono formate da un unico attributo chiave e da due chiavi esterne, pertanto risultano essere in $3NF$. \\
+\\
+La relazione ORDINE presenta un attributo chiave e tre chiavi esterne, quindi risulta essere in $3NF$. \\
+\\
+La relazione RICETTA presenta due attributi chiave e una esterna, quindi risulta essere in $3NF$. \\
+\\
+La relazione LISTA\_DELLA\_SPESA presenta due attributi chiave, quindi risulta essere in $3NF$. \\
+\\
+Per quanto riguarda le relazioni:
+\begin{itemize}
+	
+	\item
+	COMPONE
+	
+	\item
+	CONTENUTO\_IN\_CARRELLO
+	
+	\item
+	HA\_PARTICOLARE
+	
+	\item
+	GESTISCE\_PRODOTTI
+	
+\end{itemize}
+Tali relazioni sono formate da due attributi chiave che sono chiavi estene, pertanto risultano essere in $3NF$. \\
+\\
+Le relazioni CONTENUTO\_IN\_LISTA e IMPIEGATO\_IN presentano tre attributi chiave che sono chiavi esterne, quindi risultano essere in $3NF$.\\
+\\
+Dall'analisi svolta si deduce che la figura~\vref{f:trad-assoc-m-n} è in terza forma normale ($3NF$).
