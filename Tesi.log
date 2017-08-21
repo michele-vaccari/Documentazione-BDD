@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  17 AUG 2017 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  21 AUG 2017 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,7 +1547,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (./materialeInizialeFinale/Frontespizio.tex
-<Tesi-frn.pdf, id=241, 597.50829pt x 845.0471pt>
+<Tesi-frn.pdf, id=245, 597.50829pt x 845.0471pt>
 File: Tesi-frn.pdf Graphic file (type pdf)
  <use Tesi-frn.pdf>
 Package pdftex.def Info: Tesi-frn.pdf used on input line 9.
@@ -1694,7 +1694,7 @@ chapter 2.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-<immagini/01_prodotto.pdf, id=392, 431.6125pt x 205.76875pt>
+<immagini/01_prodotto.pdf, id=407, 431.6125pt x 205.76875pt>
 File: immagini/01_prodotto.pdf Graphic file (type pdf)
 
 <use immagini/01_prodotto.pdf>
@@ -1707,12 +1707,13 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
  [3
 
  <./immagini/01_prodotto.pdf>]
-<immagini/schema_totale.pdf, id=446, 2963.07pt x 1314.9125pt>
-File: immagini/schema_totale.pdf Graphic file (type pdf)
+<immagini/diagramma-ER-completo.pdf, id=461, 2963.07pt x 1375.1375pt>
+File: immagini/diagramma-ER-completo.pdf Graphic file (type pdf)
 
-<use immagini/schema_totale.pdf>
-Package pdftex.def Info: immagini/schema_totale.pdf used on input line 83.
-(pdftex.def)             Requested size: 666.04997pt x 295.56165pt.
+<use immagini/diagramma-ER-completo.pdf>
+Package pdftex.def Info: immagini/diagramma-ER-completo.pdf used on input line 
+83.
+(pdftex.def)             Requested size: 666.04997pt x 309.09883pt.
 
 
 LaTeX Warning: Float too large for page by 22.60002pt on input line 86.
@@ -1720,81 +1721,70 @@ LaTeX Warning: Float too large for page by 22.60002pt on input line 86.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./capitoli/capitolo-3.tex [4] [5 <./immagini/schema_totale.pdf>]
+) (./capitoli/capitolo-3.tex [4] [5 <./immagini/diagramma-ER-completo.pdf>]
 chapter 3.
+[6
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+] <immagini/traduzione-entita.pdf, id=1118, 657.45625pt x 582.175pt>
+File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
- []
+<use immagini/traduzione-entita.pdf>
+Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 56.
+(pdftex.def)             Requested size: 370.0pt x 327.64142pt.
 
-<immagini/traduzione_prodotto.pdf, id=1101, 672.5125pt x 50.1875pt>
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
 
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 39
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
- <use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 42
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 44
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
- <use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 47
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
+<immagini/traduzione-entita-deboli.pdf, id=1119, 747.79375pt x 782.925pt>
+File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 50
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
- <use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 53
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
+<use immagini/traduzione-entita-deboli.pdf>
+Package pdftex.def Info: immagini/traduzione-entita-deboli.pdf used on input li
+ne 64.
+(pdftex.def)             Requested size: 370.0pt x 387.3878pt.
 
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 56
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
- [6
 
- <./immagini/traduzione_prodotto.pdf>]
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 59
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
- <use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 63
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 67
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-File: immagini/traduzione_prodotto.pdf Graphic file (type pdf)
- <use immagini/traduzione_prodotto.pdf>
-Package pdftex.def Info: immagini/traduzione_prodotto.pdf used on input line 70
-.
-(pdftex.def)             Requested size: 356.95326pt x 26.63751pt.
-)
-(./capitoli/capitolo-4.tex [7]
+<immagini/traduzione-associazioni-1-1.pdf, id=1120, 747.79375pt x 782.925pt>
+File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
+
+<use immagini/traduzione-associazioni-1-1.pdf>
+Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
+ line 72.
+(pdftex.def)             Requested size: 370.0pt x 387.3878pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<immagini/traduzione-associazioni-1-N.pdf, id=1121, 762.85pt x 782.925pt>
+File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
+
+<use immagini/traduzione-associazioni-1-N.pdf>
+Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
+ line 80.
+(pdftex.def)             Requested size: 370.0pt x 379.73012pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<immagini/traduzione-associazioni-M-N.pdf, id=1122, 762.85pt x 1096.095pt>
+File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
+
+<use immagini/traduzione-associazioni-M-N.pdf>
+Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
+ line 88.
+(pdftex.def)             Requested size: 370.0pt x 531.62216pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./capitoli/capitolo-4.tex [7] [8 <./immagini/traduzione-entita.pdf>]
+[9 <./immagini/traduzione-entita-deboli.pdf>] [10 <./immagini/traduzione-associ
+azioni-1-1.pdf>] [11 <./immagini/traduzione-associazioni-1-N.pdf>] [12 <./immag
+ini/traduzione-associazioni-M-N.pdf>]
 chapter 4.
-) (./capitoli/capitolo-5.tex [8
+) (./capitoli/capitolo-5.tex [13
 
 ]
 chapter 5.
@@ -1808,14 +1798,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9
+ [14
 
-] [10] [11] [12]
-[13] [14] [15]) (./capitoli/capitolo-6.tex [16]
+] [15] [16] [17]
+[18] [19] [20]) (./capitoli/capitolo-6.tex [21]
 chapter 6.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
- [17
+ [22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
@@ -1823,7 +1813,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 64EA26F18BC4764A7E859C075196862F;4132.
+(rerunfilecheck)             Checksum: 63958643980BD9AEEF25E46FD7A779DC;4269.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1833,10 +1823,10 @@ Package logreq Info: Writing requests to 'Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25214 strings out of 492995
- 439371 string characters out of 6136402
- 1310465 words of memory out of 5000000
- 27935 multiletter control sequences out of 15000+600000
+ 25246 strings out of 492995
+ 440420 string characters out of 6136402
+ 1311467 words of memory out of 5000000
+ 27952 multiletter control sequences out of 15000+600000
  81638 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,22n,92p,8817b,2171s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1855,10 +1845,10 @@ pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><d:/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
 /2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (23 pages, 943598 bytes).
+Output written on Tesi.pdf (28 pages, 2018611 bytes).
 PDF statistics:
- 1542 PDF objects out of 1728 (max. 8388607)
- 1210 compressed objects within 13 object streams
- 353 named destinations out of 1000 (max. 500000)
- 14829 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 2213 PDF objects out of 2487 (max. 8388607)
+ 1761 compressed objects within 18 object streams
+ 364 named destinations out of 1000 (max. 500000)
+ 14857 words of extra memory for PDF output out of 17280 (max. 10000000)
 
