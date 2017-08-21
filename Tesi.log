@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  21 AUG 2017 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  21 AUG 2017 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,7 +1547,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (./materialeInizialeFinale/Frontespizio.tex
-<Tesi-frn.pdf, id=257, 597.50829pt x 845.0471pt>
+<Tesi-frn.pdf, id=253, 597.50829pt x 845.0471pt>
 File: Tesi-frn.pdf Graphic file (type pdf)
  <use Tesi-frn.pdf>
 Package pdftex.def Info: Tesi-frn.pdf used on input line 9.
@@ -1693,7 +1693,7 @@ chapter 2.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-<immagini/01_prodotto.pdf, id=424, 431.6125pt x 205.76875pt>
+<immagini/01_prodotto.pdf, id=419, 431.6125pt x 205.76875pt>
 File: immagini/01_prodotto.pdf Graphic file (type pdf)
 
 <use immagini/01_prodotto.pdf>
@@ -1706,7 +1706,7 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
  [3
 
  <./immagini/01_prodotto.pdf>]
-<immagini/diagramma-ER-completo.pdf, id=479, 2963.07pt x 1375.1375pt>
+<immagini/diagramma-ER-completo.pdf, id=473, 2963.07pt x 1375.1375pt>
 File: immagini/diagramma-ER-completo.pdf Graphic file (type pdf)
 
 <use immagini/diagramma-ER-completo.pdf>
@@ -1724,7 +1724,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 chapter 3.
 [6
 
-] <immagini/traduzione-entita.pdf, id=1134, 657.45625pt x 582.175pt>
+] <immagini/traduzione-entita.pdf, id=1139, 657.45625pt x 582.175pt>
 File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita.pdf>
@@ -1734,46 +1734,47 @@ Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 56.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-entita-deboli.pdf, id=1135, 747.79375pt x 782.925pt>
+<immagini/traduzione-entita-deboli.pdf, id=1140, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita-deboli.pdf>
 Package pdftex.def Info: immagini/traduzione-entita-deboli.pdf used on input li
 ne 64.
-(pdftex.def)             Requested size: 370.0pt x 387.3878pt.
+(pdftex.def)             Requested size: 370.0pt x 401.44035pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-1.pdf, id=1136, 747.79375pt x 782.925pt>
+<immagini/traduzione-associazioni-1-1.pdf, id=1141, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-1.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
  line 72.
-(pdftex.def)             Requested size: 370.0pt x 387.3878pt.
+(pdftex.def)             Requested size: 370.0pt x 401.44035pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-N.pdf, id=1137, 762.85pt x 782.925pt>
+<immagini/traduzione-associazioni-1-N.pdf, id=1142, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-N.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
  line 80.
-(pdftex.def)             Requested size: 370.0pt x 379.73012pt.
+(pdftex.def)             Requested size: 370.0pt x 401.44035pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-M-N.pdf, id=1138, 762.85pt x 1096.095pt>
+
+<immagini/traduzione-associazioni-M-N.pdf, id=1143, 773.89125pt x 1146.2825pt>
 File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-M-N.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
  line 88.
-(pdftex.def)             Requested size: 370.0pt x 531.62216pt.
+(pdftex.def)             Requested size: 370.0pt x 548.0405pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1862,7 +1863,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 7134B82792AF77E76CD004B92144DFB1;4556.
+(rerunfilecheck)             Checksum: F89766363ACD97D0AA1EEC0CF3BFD030;4486.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1872,10 +1873,10 @@ Package logreq Info: Writing requests to 'Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25249 strings out of 492995
- 440461 string characters out of 6136402
- 1311793 words of memory out of 5000000
- 27957 multiletter control sequences out of 15000+600000
+ 25238 strings out of 492995
+ 440266 string characters out of 6136402
+ 1315793 words of memory out of 5000000
+ 27953 multiletter control sequences out of 15000+600000
  79864 words of font info for 78 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,22n,92p,8817b,2171s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1894,10 +1895,10 @@ pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><d:/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
 /2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (30 pages, 2026306 bytes).
+Output written on Tesi.pdf (30 pages, 2118867 bytes).
 PDF statistics:
- 2240 PDF objects out of 2487 (max. 8388607)
- 1786 compressed objects within 18 object streams
- 368 named destinations out of 1000 (max. 500000)
- 14881 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 2287 PDF objects out of 2487 (max. 8388607)
+ 1828 compressed objects within 19 object streams
+ 361 named destinations out of 1000 (max. 500000)
+ 14873 words of extra memory for PDF output out of 17280 (max. 10000000)
 
