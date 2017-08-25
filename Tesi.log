@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  22 AUG 2017 01:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  25 AUG 2017 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1707,13 +1707,13 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
  [3
 
  <./immagini/01-utente-amministratore.pdf>]
-<immagini/diagramma-ER-completo.pdf, id=473, 2963.07pt x 1375.1375pt>
+<immagini/diagramma-ER-completo.pdf, id=473, 2963.07pt x 1314.9125pt>
 File: immagini/diagramma-ER-completo.pdf Graphic file (type pdf)
 
 <use immagini/diagramma-ER-completo.pdf>
 Package pdftex.def Info: immagini/diagramma-ER-completo.pdf used on input line 
 82.
-(pdftex.def)             Requested size: 666.04997pt x 309.09883pt.
+(pdftex.def)             Requested size: 666.04997pt x 295.56165pt.
 
 
 LaTeX Warning: Float too large for page by 22.60002pt on input line 85.
@@ -1725,7 +1725,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 chapter 3.
 [6
 
-] <immagini/traduzione-entita.pdf, id=1139, 657.45625pt x 582.175pt>
+] <immagini/traduzione-entita.pdf, id=1149, 657.45625pt x 582.175pt>
 File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita.pdf>
@@ -1735,7 +1735,7 @@ Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 56.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-entita-deboli.pdf, id=1140, 767.86874pt x 833.1125pt>
+<immagini/traduzione-entita-deboli.pdf, id=1150, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita-deboli.pdf>
@@ -1746,7 +1746,7 @@ ne 64.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-1.pdf, id=1141, 767.86874pt x 833.1125pt>
+<immagini/traduzione-associazioni-1-1.pdf, id=1151, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-1.pdf>
@@ -1757,7 +1757,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-N.pdf, id=1142, 767.86874pt x 833.1125pt>
+<immagini/traduzione-associazioni-1-N.pdf, id=1152, 767.86874pt x 833.1125pt>
 File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-N.pdf>
@@ -1769,7 +1769,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-M-N.pdf, id=1143, 773.89125pt x 1146.2825pt>
+<immagini/traduzione-associazioni-M-N.pdf, id=1153, 773.89125pt x 1146.2825pt>
 File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-M-N.pdf>
@@ -1896,10 +1896,10 @@ pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><d:/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
 /2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (30 pages, 2120901 bytes).
+Output written on Tesi.pdf (30 pages, 2123867 bytes).
 PDF statistics:
- 2287 PDF objects out of 2487 (max. 8388607)
- 1828 compressed objects within 19 object streams
+ 2297 PDF objects out of 2487 (max. 8388607)
+ 1834 compressed objects within 19 object streams
  361 named destinations out of 1000 (max. 500000)
  14873 words of extra memory for PDF output out of 17280 (max. 10000000)
 
