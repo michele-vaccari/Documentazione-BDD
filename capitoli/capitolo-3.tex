@@ -53,8 +53,8 @@ L'algoritmo che si utilizza per la traduzione dal modello E-R in modello relazio
 \subsection{Traduzione di associazioni binarie N:M}
 	Per ogni tipo di associazione binaria $M:N$ nello schema E-R si costruisce una nuova relazione che rappresenta l'associazione. Si inseriscono come attributi di chiave esterna della relazione le chiavi primarie delle relazioni che rappresentano i tipi di entità partecipanti, le loro combinazioni formano la chiave primaria della relazione. Infine si inseriscono nella nuova relazione tutti gli attributi semplici del tipo di associazione $M:N$.
 
-\subsection{Traduzione di associazioni ternarie}
-	Per ogni tipo di associazione binaria $M:N$ nello schema E-R si costruisce una nuova relazione che rappresenta l'associazione. Si inseriscono come attributi di chiave esterna della relazione le chiavi primarie delle relazioni che rappresentano i tipi di entità partecipanti, le loro combinazioni formano la chiave primaria della relazione. Infine si inseriscono nella nuova relazione tutti gli attributi semplici del tipo di associazione $M:N$.
+\subsection{Traduzione di associazioni N-arie}
+	L'ultimo passo dell'algoritmo si occupa dell'analisi e conversione dei tipi di associazioni N-arie. In questo caso si costruisce una nuova relazione in cui verranno inserite le chiavi primarie delle entità coinvolte; tali campi verranno considerati come chiavi esterne.
 
 \section{Applicazione dell'algoritmo di traduzione}
 	Di seguito si riporta la traduzione in modello relazionale del modello E-R analizzato:

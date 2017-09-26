@@ -78,11 +78,11 @@ CREATE TABLE IF NOT EXISTS `SQUADRA` (
 	`Compilata` BOOLEAN NOT NULL,
 	`Nome` VARCHAR(30) NOT NULL,
 	`Descrizione` TEXT(5000),
-	`Sede` VARCHAR(30) NOT NULL,
-	`Logo` VARCHAR(50) NOT NULL,
-	`Immagine` VARCHAR(50) NOT NULL,
-	`Nome_sponsor` VARCHAR(30) NOT NULL,
-	`Logo_sponsor` VARCHAR(50) NOT NULL,
+	`Sede` VARCHAR(30),
+	`Logo` VARCHAR(50),
+	`Immagine` VARCHAR(50),
+	`Nome_sponsor` VARCHAR(30),
+	`Logo_sponsor` VARCHAR(50),
 	PRIMARY KEY (`Id`),
 	FOREIGN KEY (`Email_G`) REFERENCES GESTORE_SQUADRA(`Email_R`)
 ) ENGINE = InnoDB;

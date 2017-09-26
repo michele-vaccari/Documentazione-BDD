@@ -22,35 +22,48 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Utente}
 		\end{figure}
 		
-		Entità che rappresenta un generico utente dell'applicazione. L'utente si distingue in \emph{Registrato} e \emph{Amministratore}.
+		Tale entità rappresenta un generico utente dell'applicazione. L'utente si distingue in \emph{Registrato} e \emph{Amministratore}.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Email]
-			Chiave primaria dell'entità che identifica univocamente l'utente.
+			Chiave primaria dell'entità ``Utente'' che identifica univocamente un utente. Il valore di tale attributo viene inserito dall'utente con relativo controllo di omonimie.
 			
 			\item[Password]
-			Stringa alfanumerica con lunghezza di 32 caratteri. Il valore di tale attributo viene generato cifrando, mediante la funzione crittografica MD5, la password inserita dall'utente.
+			Identifica la password utilizzata dall'utente in fase di autenticazione. Il valore di tale attributo viene generato cifrando in fase di registrazione, mediante la funzione crittografica MD5, la password inserita dall'utente.
 			
 			\item[Chiave privata]
-			Stringa alfanumerica con lunghezza di 32 caratteri. Il valore di tale attributo viene generato cifrando, mediante la funzione crittografica MD5, il Timestamp di registrazione dell'utente.
+			Stringa alfanumerica con lunghezza di 32 caratteri. Il valore di tale attributo viene generato cifrando, mediante la funzione crittografica MD5, la data di registrazione dell'utente, fornita dal server, al momento della registrazione.
 			
 			\item[Nome]
-			Il valore di tale attributo viene inserito dall'utente.
+			Identifica il nome dell'utente con un massimo di 30 caratteri.
 			
 			\item[Cognome]
-			Il valore di tale attributo viene inserito dall'utente.
+			Identifica il cognome dell'utente con un massimo di 30 caratteri.
 			
 			\item[Tipo]
-			Carattere singolo. Serve per identificare il tipo di utente registrato nel database. Tale attributo può assumere i seguenti valori:
-			A~(Amministratore), G~(Gestore~squadra), R~(Arbitro).
+			Identifica il tipo di utente ovvero:
+			\begin{itemize}
+				\item
+				``A'' per identificare un amministratore;
+				\item
+				``G'' per identificare il gestore di una squadra;
+				\item
+				``R'' per identificare un arbitro.
+			\end{itemize}
 			
 			\item[Attivo]
-			Booleano. Serve per determinare se un utente è attivo oppure no, permettendo a quest'ultimo di accedere al sito.
+			Identifica lo stato dell'utente., ovvero se è attivo oppure no. Può assumere due valori di tipo booleano (true o false); di default assume valore true (attivo).
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
+		
+		\subsubsection*{Caso Particolare}
+		Esiste sempre un valore particolare, ovvero ``admin'', che rappresenta sempre il primo utente Amministratore. Tale valore è sempre presente all'interno della tabella.
 	
 	\subsection{Amministratore}
 	
@@ -62,7 +75,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Amministratore}
 		\end{figure}
 		
-		Specializzazione dell'entità utente, eredita tutti gli attributi dell'entità utente. Serve per rappresentare gli utenti aventi i privilegi di ``ROOT''.
+		Tale entità rappresenta la specializzazione dell'entità \emph{Utente}, ereditandone tutti gli attributi. Serve per rappresentare gli utenti \emph{Amministratori}.
 	
 	\subsection{Registrato}
 	
@@ -74,19 +87,22 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Registrato}
 		\end{figure}
 		
-		Specializzazione dell'entità utente, eredita tutti gli attributi dell'entità utente. Serve per rappresentare gli utenti Gestori Squadra e Arbitri che possono accedere all'applicazione Web. Tale entità può essere creata solo dall'amministratore.
+		Tale entità rappresenta la specializzazione dell'entità \emph{Utente}, ereditandone tutti gli attributi. Serve per rappresentare gli utenti \emph{Gestori Squadra} e gli utenti \emph{Arbitri} che possono accedere all'applicazione Web. Tale entità può essere creata solo dall'amministratore.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Indirizzo]
-			
+			Identifica l'indirizzo dell'utente con un massimo di 50 caratteri.
 			
 			\item[Telefono]
-			
+			Identifica il telefono dell'utente con un massimo di 15 caratteri.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Arbitro}
 		
@@ -98,22 +114,25 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Arbitro}
 		\end{figure}
 		
-		Specializzazione dell'entità Registrato, eredita tutti gli attributi dell'entità utente. Serve per rappresentare il tipo di utente Arbitro. Tale entità può essere creata solo dall'amministratore.
+		Tale entità rappresenta la specializzazione dell'entità \emph{Registrato}, ereditandone tutti gli attributi. Serve per rappresentare il tipo di utente \emph{Arbitro}. Tale entità può essere creata solo dall'amministratore.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Data di nascita]
-			Indica la data di nascita dell'arbitro.
+			Identifica la data di nascita dell'utente.
 			
 			\item[Nazionalita]
-			
+			Identifica la nazionalità dell'utente con un massimo di 50 caratteri.
 			
 			\item[Foto]
-			
+			Identifica il percorso dell'immagine all'interno della cartella \emph{Immagini} del server con un massimo di 50 caratteri.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Gestore Squadra}
 	
@@ -125,7 +144,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Gestore Squadra}
 		\end{figure}
 		
-		Specializzazione dell'entità Registrato, eredita tutti gli attributi dell'entità Registrato e Utente. Serve per rappresentare il tipo di utente Gestore Squadra. Tale entità può essere creata solo dall'amministratore.
+		Tale entità rappresenta la specializzazione dell'entità \emph{Registrato}, ereditandone tutti gli attributi. Serve per rappresentare il tipo di utente \emph{Gestore Squadra}. Tale entità può essere creata solo dall'amministratore.
 	
 	\subsection{Torneo}
 	
@@ -137,25 +156,34 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Torneo}
 		\end{figure}
 		
-		Entità che rappresenta un torneo in svolgimento o già svolto. Può essere di due tipi: ad eliminazione diretta o all'italiana.
+		Tale entità rappresenta un torneo in svolgimento o già svolto. Può essere di due tipi: ad eliminazione diretta o all'italiana. Tale entità può essere creata solo dall'amministratore.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Id]
-			Intero. Chiave primaria dell'entità che identifica univocamente il torneo.
+			Chiave primaria dell'entità ``Torneo'' che identifica univocamente un torneo. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Tipo]
-			Serve per distinguere i due tipi di torneo.
+			Identifica la tipologia di torneo ovvero:
+			\begin{itemize}
+				\item
+				``E'' per identificare un torneo ad eliminazione diretta;
+				\item
+				``I'' per identificare un torneo all'italiana;
+			\end{itemize}
 			
 			\item[Nome]
-			
+			Identifica la nazionalità dell'utente con un massimo di 30 caratteri.
 			
 			\item[Descrizione]
-			Informazioni aggiuntive relative al torneo (storia, luogo, sponsor, ecc.).
+			Campo utilizzato dall'amministratore per inserire delle informazioni aggiuntive relative al torneo (storia, luogo, sponsor, ecc.).
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Ad eccezione del campo ``Descrizione'', nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Partita}
 		
@@ -167,26 +195,38 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Partita}
 		\end{figure}
 		
+		Tale entità rappresenta una partita. Tale entità può essere creata solo dall'amministratore.
+		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Id]
-			Intero. Chiave primaria dell'entità che identifica univocamente una partita.
+			Chiave primaria dell'entità ``Partita'' che identifica univocamente una partita. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Tipo torneo]
-			Identifica da che tipo di torneo derivano le partite. Serve per gestire in due modi diversi le classifiche.
+			Identifica la tipologia di torneo ovvero:
+			\begin{itemize}
+				\item
+				``E'' per identificare un torneo ad eliminazione diretta;
+				\item
+				``I'' per identificare un torneo all'italiana;
+			\end{itemize}
+			Questo attributo serve per gestire in modi diversi le classifiche.
 			
 			\item[Luogo]
-			
+			Identifica il luogo in cui è si svolge la partita con un massimo di 30 caratteri.
 			
 			\item[Data]
-			
+			Identifica la data in cui è si svolge la partita.
 			
 			\item[Ora]
-			
+			Identifica l'ora in cui si svolge la partita.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Referto}
 		
@@ -198,28 +238,31 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Referto}
 		\end{figure}
 		
-		Entità che rappresenta il referto di una determinata gara.
+		Tale entità rappresenta il referto di una determinata gara. Tale entità può essere creata solo dall'arbitro.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Id]
-			Intero. Chiave primaria dell'entità che identifica univocamente un referto.
+			Chiave primaria dell'entità ``Referto'' che identifica univocamente una partita. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Ora inizio]
-			Orario effettivo di inizio della partita.
+			Identifica l'orario effettivo di inizio della partita.
 			
 			\item[Ora fine]
-			Orario effettivo di fine della partita.
+			Identifica l'orario effettivo di fine della partita.
 			
 			\item[Risultato]
-			Risultato finale dell'incontro
+			Identifica il risultato finale dell'incontro.
 			
 			\item[Compilato]
-			Serve per capire se il referto è stato compilato o meno.
+			Identifica lo stato del referto, ovvero se è stato compilato oppure no. Può assumere due valori di tipo booleano (true o false).
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Squadra}
 	
@@ -231,40 +274,43 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Squadra}
 		\end{figure}
 		
-		Entità che rappresenta una squadra all'interno dell'applicazione Web.
+		Tale entità rappresenta una squadra. Tale entità viene creata dall'amministritatore e successivamente viene completata dal gestore della squadra.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Id]
-			Intero. Chiave primaria dell'entità che identifica univocamente la squadra.
+			Chiave primaria dell'entità ``Squadra'' che identifica univocamente una partita. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Compilata]
-			Serve per identificare se un gestore squadra ha compilato la squadra. Se la squadra non è stata compilata, la prima volta che si accede all'applicazione web si dovranno fornire i dati richiesti. Se non si forniscono i dati della squadra non si può svolgere nessuna attività.
+			Identifica lo stato della squadra, ovvero se è stata compilata oppure no. Può assumere due valori di tipo booleano (true o false). Se la squadra non è stata compilata, la prima volta che si accede all'applicazione web si dovranno fornire i dati richiesti. Se non si forniscono i dati della squadra non si può svolgere nessuna attività.
 			
 			\item[Nome]
-			Nome legale della società.
+			Identifica il nome legale della società con un massimo di 30 caratteri.
 			
 			\item[Descrizione]
-			Informazioni aggiuntive relative alla squadra.
+			Campo utilizzato dall gestore della squadra per inserire delle informazioni aggiuntive relative alla squadra.
 			
 			\item[Sede]
-			Sede legale della società.
+			Identifica la sede legale della società con un massimo di 30 caratteri.
 			
 			\item[Logo]
-			Identifica il logo/simbolo della squadra.
+			Identifica il percorso del logo della squadra all'interno della cartella \emph{Immagini} del server con un massimo di 50 caratteri.
 			
 			\item[Immagine]
-			Identifica la foto della squadra.
+			Identifica il percorso della foto della squadra all'interno della cartella \emph{Immagini} del server con un massimo di 50 caratteri.
 			
 			\item[Nome sponsor]
-			Identifica il nome dello sponsor ufficiale della squadra.
+			Identifica il nome dello sponsor ufficiale della squadra con un massimo di 30 caratteri.
 			
 			\item[Logo sponsor]
-			Identifica il logo dello sponsor ufficiale della squadra.
+			Identifica il percorso del logo dello sponsor all'interno della cartella \emph{Immagini} del server con un massimo di 50 caratteri.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 	
 	\subsection{Classifica}
 	
@@ -276,34 +322,37 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Classifica}
 		\end{figure}
 		
-		Entità debole in quanto non ha propri attributi chiave, rappresenta la classifica di un determinato torneo.
+		Tale entità rappresenta la classifica di un determinato torneo. Tale entità è un'entità debole in quanto non ha propri attributi chiave ma è un torneo ad identificarla univocamente.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Punti]
-			Punti totalizzati fino a quel momento da una determinata squadra in un determinato torneo.
+			Identifica i punti totalizzati fino a quel momento da una determinata squadra in un determinato torneo.
 			
 			\item[Vittorie]
-			Numero totale delle partite giocate da una squadra in un determinato torneo.
+			Identifica il numero totale delle partite vinte da una squadra in un determinato torneo.
 			
 			\item[Sconfitte]
-			Dati per il monitoraggio delle partite disputate da una squadra fino a quel momento.
+			Identifica il numero totale delle partite perse da una squadra in un determinato torneo.
 			
 			\item[Pareggi]
-			Dati per il monitoraggio delle partite disputate da una squadra fino a quel momento.
+			Identifica il numero totale delle partite pareggiate da una squadra in un determinato torneo.
 			
 			\item[Partite]
-			Dati per il monitoraggio delle partite disputate da una squadra fino a quel momento.
+			Identifica il numero totale delle partite disputate da una squadra in un determinato torneo.
 			
 			\item[Goal fatti]
-			Rappresenta il totale dei goal fatti dai giocatori di una determinata squadra in un torneo.
+			Identifica il totale dei goal fatti dai giocatori di una determinata squadra in un torneo.
 			
 			\item[Goal subiti]
-			Rappresenta il totale dei goal subiti da una squadra nelle partite di un torneo.
+			Identifica il totale dei goal subiti dai giocatori una determinata squadra in un torneo.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 		
 	\subsection{Giocatore}
 	
@@ -315,93 +364,135 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\caption{Entità Giocatore}
 		\end{figure}
 		
-		Entità debole che rappresenta un determinato atleta/giocatore.
+		Tale entità rappresenta la un determinato giocatore di una squadra. Tale entità è un'entità debole in quanto non ha propri attributi chiave ma è una squadra ad identificarla univocamente.
 		
 		\subsubsection*{Descrizione Attributi}
 		
 		\begin{description}
 			
 			\item[Id]
-			Chiave parziale che identifica univocamente i vari giocatori di una squadra.
+			Chiave parziale dell'entità ``Giocatore'' che identifica univocamente un giocatore appartenente ad una determinata squadra. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Attivo]
-			Determina se un giocatore è attivo oppure no.
+			Identifica lo stato del giocatore, ovvero se è attivo oppure no. Può assumere due valori di tipo booleano (true o false); di default assume valore true (attivo).
 			
 			\item[Numero maglia]
-			Numero maglia con cui il giocatore prende parte alle partite.
+			Identifica il numero maglia con cui il giocatore prende parte alle partite.
 			
 			\item[Ruolo]
-			Ruolo che il giocatore interpreta in campo.
+			Identifica il ruolo che il giocatore interpreta in campo con un massimo di 50 caratteri.
 			
 			\item[Nome]
-			
+			Identifica il nome del giocatore con un massimo di 30 caratteri.
 			
 			\item[Cognome]
-			
+			Identifica il cognome del giocatore con un massimo di 30 caratteri.
 			
 			\item[Data di nascita]
-			
+			Identifica la data di nascita del giocatore.
 			
 			\item[Nazionalita]
-			
+			Identifica il nome del giocatore con un massimo di 20 caratteri.
 			
 			\item[Foto]
-			Immagine che raffigura il giocatore.
+			Identifica il percorso della foto del giocatore all'interno della cartella \emph{Immagini} del server con un massimo di 50 caratteri.
 			
 			\item[Descrizione]
-			Informazioni aggiuntive relative al giocatore.
+			Campo utilizzato dall gestore della squadra per inserire delle informazioni aggiuntive relative al giocatore.
 			
 			\item[Goal]
-			Dati per monitorate il rendimento di ogni singolo giocatore.
+			Indica il numero di goal effettuati dal giocatore.
 			
 			\item[Ammonizioni]
-			Dati per monitorate il rendimento di ogni singolo giocatore.
+			Indica il numero di ammonizioni del giocatore.
 			
 			\item[Espulsioni]
-			Dati per monitorate il rendimento di ogni singolo giocatore.
+			Indica il numero di espulsioni del giocatore.
 			
 		\end{description}
+		
+		\subsubsection*{N.B.}
+		Nessuno di questi attributi può assumere il valore NULL.
 
 \section{Descrizione delle associazioni}
 	
 	\subsection{Ha}
 	Associazione presente tra Torneo e Classifica.
+	L’entità classifica è debole per questo è all’interno di un doppio rettangolo; anche il rombo è doppio per lo stesso motivo. 
+	Un entità è debole se non ha attributi chiave; tali entità hanno sempre un vincolo di partecipazione totale perché altrimenti non sarebbero identificabili. Come si può notare è presente un vincolo di partecipazione totale dalla parte di classifica.
+	La molteplicità è $1:N$ in quanto ad un torneo sono associate più classifiche (una per ogni squadra), ma una classifica può essere associata soltanto ad un singolo torneo.
 	
 	\subsection{Presente}
-	Associazione presente tra Squadra e Classifica.
+	Associazione presente tra Squadra e Classifica;
+	Valgono le stesse considerazioni fatte per la relazione ``Ha''.
+	La molteplicità è $1:N$ in quanto ad una squadra possono essere associate più classifiche (una per ogni torneo a cui la squadra partecipa), ma una classifica può essere associata soltanto ad una squadra.
 	
 	\subsection{Composta}
 	Associazione presente tra Squadra e Giocatore.
+	Indica quali sono i giocatori che compongono una determinata squadra. In una squadra possono prendere parte al massimo $36$ giocatori. I giocatori possono far parte di una sola squadra. Come si può vedere la molteplicità è $1: 36$.
+	I $36$ giocatori sono la rosa della squadra.
 	
 	\subsection{Gestisce}
 	Associazione presente tra Gestore Squadra e Squadra.
+	Utile per sapere da chi è gestita una determinata squadra; è presente un vincolo di partecipazione totale dalla parte di squadra in quanto non può esistere una squadra se non esiste un gestore che la crea.
+	La molteplicità è $1:1$ in quanto una squadra può essere gestita da un solo gestore e viceversa.
 	
 	\subsection{Riferito}
 	Associazione presente tra Partita e Referto.
+	Serve per associare un referto ad una determinata partita che, deve essere o è già stata, giocata.
+	È presente un vincolo di partecipazione totale dalla parte di referto in quanto non esiste un referto se non esiste una partita. 
+	La molteplicità è $1:1$ poiché ad una determinata partita è associato un solo referto e viceversa.
 	
 	\subsection{Gestisce Registrato}
 	Associazione presente tra Registrato e Amministratore.
+	I Registrati del sistema (Arbitri e Gestori squadra) devo essere, creati da uno degli amministratori. Per questo motivo è presente un vincolo di partecipazione totale dalla parte di Registrato. Un Registrato non può esistere se non è presente un Amministratore che lo abbia creato.
+	La molteplicità è $1:N$ in quanto un amministratore può creare più utenti Registrati, ma un utente Registato può essere creato da un solo amministratore.
 	
 	\subsection{Gestisce Torneo}
 	Associazione presente tra Amministratore e Torneo.
+	L’amministratore è l’unico a poter creare un torneo (ad Eliminazione diretta o all’Italiana). Per questo motivo è presente un vincolo di partecipazione totale dalla parte di Torneo. Un torneo non può esistere se non c’è un Amministratore che lo abbia creato.
+	La molteplicità è $1:N$ in quanto un amministratore può creare molti tornei, ma un torneo può essere creato da un solo amministratore.
+	
+	\subsection{Compila}
+	Associazione presente tra Arbitro e Referto.
+	L'Arbitro, prima scelto da un amministratore, sarà colui che ``scrive'' il referto di una specifica partita.
+	È presente un vincolo di partecipazione totale dalla parte di referto, in quanto questo non può esistere se non è esiste una arbitro che può compilare tale referto.
+	La molteplicità è $1:N$ in quanto un arbitro può compilare $N$ referti ma un solo referto può essere compilato da un solo Arbitro.
 	
 	\subsection{Partecipa}
 	Associazione presente tra Torneo e Squadra.
+	Indica a quali tornei partecipano le squadre e quali squadre partecipano ad un determinato torneo.
+	La partecipazione totale è dalla parte di torneo perché non può esistere se non sono presenti delle squadre che vi possano partecipare.
+	La molteplicità è $M:N$ in quanto una squadra può partecipare a più tornei ed un torneo può avere più squadre che vi partecipano, con un minimo di $2$ per un torneo ad eliminazione diretta e con un minimo di $4$ per un torneo all’italiana.
 	
 	\subsection{Cartellino}
 	Associazione presente tra Arbitro e Giocatore.
+	Indica chi sono i giocatori che hanno avuto un ammonizione o un'espulsione dall'arbitro.
+	Tale associazione presenta l’attributo Numero che specifica il numero di maglia del giocatore ammonito?
+	La partecipazione parziale in entrambe le parti perchè può esistere un arbitro che non ha mai assegnato un ammonizione o un'espulsione e, viceversa, giocatore con nessuna ammonizione o espulsione da parte di un alrbitro.
+	La molteplicità è $M:N$ in quanto un arbitro può ammonire ed epellere più di un giocatore e viceversa.
 	
 	\subsection{Marcatore}
 	Associazione presente tra Referto e Giocatore.
+	Indica chi sono i giocatori che hanno segnato un goal in un referto.
+	La partecipazione parziale in entrambe le parti perchè può esistere un referto con nessun giocatore che ha segnato un goal.
+	La molteplicità è $M:N$ in quanto in un referto possono esserci più giocatori che segnano un goal e, viceversa, più giocatore possono segnare più goal.
 	
 	\subsection{Scelto}
 	Associazione ternaria presente tra Arbitro, Amministratore e Partita.
+	Indica che un determinato arbitro è stato scelto da un determinato amministratore per una specifica partita.
+	Un arbitro può essere scelto per $N$ diverse partite e per ogni partita è scelto un singolo arbitro. Un amministratore può scegliere $N$ arbitri per $N$ diverse partite il ciò vuol dire che un arbitro arbitra una singola partita.
 	
 	\subsection{Formazione}
 	Associazione ternaria presente tra Squadra, Giocatore e Referto.
+	Serve per sapere chi sono i giocatori titolari più riserve che faranno parte alla formazione di una determinata partita.
+	Nell’associazione è presente un attributo (Riserva) che indica proprio le riserve della partita.
+	Se questo è uguale a ``true'' allora il giocatore scelto sarà una riserva, in caso sia ``false'' il giocatore sarà un titolare.
+	Per ogni referto sono fornite due formazioni, una per ogni squadra, composte da 18 giocatori ($11$ titolari e $7$ riserve).
 	
 	\subsection{Giocano}
 	Associazione ternaria presente tra Partita, Torneo e Squadra.
+	Indica quali squadre di un determinato torneo si devono affrontare. Tale associazione presenta l’attributo Fase\_o\_gara che specifica la fase o la giornata dei tornei rispettivamente ad eliminazione diretta o all’italiana. Una partita viene giocata sempre da $2$ squadre e fa parte di un singolo torneo, in un torneo sono possibili $N$ partite. C’è un vincolo di partecipazione totale dalla parte di partita in quanto essa non può esistere se non è stato creato un torneo o sono presenti delle squadre.
 	
 
 \section{Il modello E-R completo}
