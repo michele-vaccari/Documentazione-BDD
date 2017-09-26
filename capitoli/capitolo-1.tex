@@ -9,59 +9,57 @@
 %************************************************
 
 \section{Caratteristiche del sistema}
-Si vuole progettare un'applicazione web per la vendita online dei prodotti di un supermercato.
-L'applicazione deve avere un front-end multilingue (italiano e inglese).
+Il sito \emph{SportFerrara} è una piattaforma per la gestione delle attività sportive attraverso una comunità di utenti.
 
-I prodotti del supermercato sono suddivisi in reparti (ortofrutta, macelleria, accessori per la casa, cura della persona, ecc.) e ogni prodotto può avere una data di scadenza.
+L'applicazione web ha le seguenti caratteristiche:
 
-L'applicazione web deve avere le seguenti caratteristiche:
 
 \begin{enumerate}
 	
 	\item
-	\label{f-up}
-	Possibilità di visualizzare il catalogo dei prodotti, navigabile per reparto, caratteristiche, marchio, ricerca libera, ecc.
-	Possibilità di vedere il singolo prodotto con tutti i dettagli;
+	\label{sf-uadmin}
+	Possibilità di creare gli utenti per i due ruoli principali: arbitri e gestori di squadra;
 	
 	\item
-	\label{ef-up}
-	Possibilità di visualizzare la lista delle ricette. Ogni ricetta ha un nome, un autore, un tempo di preparazione, un testo con le specifiche della sua preparazione, una lista di prodotti;
+	Possibilità di creare i diversi tornei, di disegnarne lo schema. Ogni torneo ha: nome, descrizione, sponsor e tipo (all'italiana o ad eliminazione).
 	
 	\item
-	Possibilità di inserire prodotti nel carrello e di effettuare l'acquisto di più prodotti in diverse quantità.
-	Predisporre la gestione dei prezzi, del totale carrello, la gestione della disponibilità di magazzino, impedendo di poter acquistare quantità non disponibili e prodotti scaduti;
+	Un torneo è costituito da diversi gironi o fasi, in base alla tipologia di torneo. Un girone ha un nome (ad esempio: girone 1) ed è costituito da un insieme di gare. Una fase ha un nome (ad esempio: semifinale 1) ed è costituita da una sola gara;
 	
 	\item
-	Gestione di una o più shopping list (lista della spesa);
+	Una gara è descritta da: data e ora, luogo, nomi delle squadre che si sfidano, uno o più arbitri;
 	
 	\item
-	Possibilità di inserire o selezionare un indirizzo di consegna da una rubrica personale, di simulare il pagamento e di confermare l'ordine;
+	\label{ef-uadmin}
+	Per ogni torneo è associata una classifica generale che viene aggiornata sulla base dei referti di gara compilati dagli arbitri;
 	
 	\item
-	Possibilità di visualizzare lo stato dell'ordine e lo storico degli ordini effettuati;
+	\label{sf-ugestore}
+	Possibilità per il gestore di una squadra di creare una squadra con una rosa di massimo 36 giocatori. Ogni squadra ha un nome e può avere uno sponsor. Per ogni giocatore il gestore può specificare: nome, cognome, luogo e data di nascita, numero di maglia e foto;
 	
 	\item
-	\label{ef-ur}
-	Gestione di coupon o buoni sconto in fase di acquisto, possibilità di visualizzare il tracking dell'ordine in consegna;
+	\label{ef-ugestore}
+	Per ogni gara cui la squadra è assegnata, il gestore della squadra deve fornire la formazione della squadra composta da nome e cognome dei giocatori e rispettivi ruoli;
 	
 	\item
-	\label{sf-ua}
-	Possibilità di gestire il catalogo (inserimento, modifica, blocco prodotti), i reparti, i brand, ecc.
-	Possibilità di gestire la disponibilità di magazzino;
+	\label{f-uarbitro}
+	A gara terminata l'arbitro dovrà compilare un referto in cui annoterà: l'orario effettivo di inizio e di fine della gara, risultato finale, numero di reti con i rispettivi giocatori che li hanno realizzati,  i giocatori espulsi per ogni squadra e i giocatori ammoniti per ogni squadra;
 	
 	\item
-	Gestione di prodotti in push (per cui spingere la vendita) con inserimento in una "vetrina in home page" o in un'area promo;
+	\label{f-upubblico}
+	Possibilità di selezionare il torneo desiderato e visualizzare:
 	
-	\item
-	Possibilità di visualizzare gli utenti, verificare il numero degli ordini per utente, bloccare eventuali utenti, gestire gli altri utenti amministratori;
-	
-	\item
-	Gestione dei coupon o buoni sconto;
-	
-	\item
-	\label{ef-ua}
-	Gestione del tracking dell'ordine, con simulazione di tutti i cambi di stato (consegnato al corriere, in viaggio, consegnato al destinatario, ecc.);
-	
+	\begin{itemize}
+		\item
+		La pagina relativa ad una gara con: nomi delle squadre, formazioni e referti;
+		
+		\item
+		La pagina relativa ad una squadra con la rosa dei giocatori e il calendario delle partite;
+		
+		\item
+		La pagina relativa ad un giocatore con le statistiche di gioco (punti realizzati, espulsioni e ammonizioni) per quel torneo.
+	\end{itemize}
+
 \end{enumerate}
 
 \section{Utenti del sistema}
@@ -69,10 +67,12 @@ Il sistema prevede che le categorie di utenti sia così rappresentata:
 
 \begin{description}
 	
-	\item[Utenti pubblici] Possono effettuare i punti dal \ref{f-up} al \ref{ef-up} ed eventualmente registrarsi.
+	\item[Amministratori] Possono effettuare i punti dal \ref{sf-uadmin} al \ref{ef-uadmin} compresi.
 	
-	\item[Utenti registrati] Possono effettuare i punti dal \ref{f-up} al \ref{ef-ur} compresi.
+	\item[Gestori di squadra] Possono effettuare i punti dal \ref{sf-ugestore} al \ref{ef-ugestore} compresi.
 	
-	\item[Amministratori] Possono effettuare i punti dal \ref{sf-ua} al \ref{ef-ua} compresi.
+	\item[Arbitri] Possono effettuare solamente il punto \ref{f-uarbitro}.
+	
+	\item[Utenti pubblici] Possono effettuare solamente il punto \ref{f-upubblico}.
 	
 \end{description}

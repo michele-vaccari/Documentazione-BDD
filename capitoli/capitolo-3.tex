@@ -19,6 +19,9 @@ L'algoritmo che si utilizza per la traduzione dal modello E-R in modello relazio
 	Traduzione di tipi di entità;
 	
 	\item
+	Traduzione della specializzazione;
+	
+	\item
 	Traduzione di tipi di entità deboli;
 	
 	\item
@@ -35,6 +38,9 @@ L'algoritmo che si utilizza per la traduzione dal modello E-R in modello relazio
 \subsection{Traduzione di entità}
 	Per ogni tipo di entità (forte) nello schema E-R si costruisce una relazione che contiene tutti gli attributi semplici dell'entità.
 
+\subsection{Traduzione della specializzazione}
+	Per ogni tipo di specializzazione dello schema E-R con tipo di entità generale, si costruisce una relazione e si inseriscono tutti gli attributi semplici dell'entità specializzata come attributi della relazione. Si inseriscono come attributi di chiave esterna della relazione gli attributi di chiave primaria delle relazioni corrispondenti ai tipi di entità generali. La chiave primaria della relazione è data dalla combinazione delle chiavi primarie delle entità generali e dalla chiave parziale del tipo di entità specializzata (se esiste).
+
 \subsection{Traduzione di entità deboli}
 	Per ogni tipo di entità debole dello schema E-R con tipo di entità proprietario, si costruisce una relazione e si inseriscono tutti gli attributi semplici dell'entità debole come attributi della relazione. Si inseriscono come attributi di chiave esterna della relazione gli attributi di chiave primaria delle relazioni corrispondenti ai tipi di entità proprietari. La chiave primaria della relazione è data dalla combinazione delle chiavi primarie delle entità proprietarie e dalla chiave parziale del tipo di entità debole (se esiste).
 
@@ -47,15 +53,26 @@ L'algoritmo che si utilizza per la traduzione dal modello E-R in modello relazio
 \subsection{Traduzione di associazioni binarie N:M}
 	Per ogni tipo di associazione binaria $M:N$ nello schema E-R si costruisce una nuova relazione che rappresenta l'associazione. Si inseriscono come attributi di chiave esterna della relazione le chiavi primarie delle relazioni che rappresentano i tipi di entità partecipanti, le loro combinazioni formano la chiave primaria della relazione. Infine si inseriscono nella nuova relazione tutti gli attributi semplici del tipo di associazione $M:N$.
 
+\subsection{Traduzione di associazioni ternarie}
+	Per ogni tipo di associazione binaria $M:N$ nello schema E-R si costruisce una nuova relazione che rappresenta l'associazione. Si inseriscono come attributi di chiave esterna della relazione le chiavi primarie delle relazioni che rappresentano i tipi di entità partecipanti, le loro combinazioni formano la chiave primaria della relazione. Infine si inseriscono nella nuova relazione tutti gli attributi semplici del tipo di associazione $M:N$.
+
 \section{Applicazione dell'algoritmo di traduzione}
 	Di seguito si riporta la traduzione in modello relazionale del modello E-R analizzato:
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]
+		\includegraphics[width=0.85\textwidth]
 		{immagini/traduzione-entita}
 		
 		\caption{Traduzione di entità}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.95\textwidth]
+		{immagini/traduzione-entita-specializzate}
+		
+		\caption{Traduzione di entità specializzate}
 	\end{figure}
 	
 	\begin{figure}[h]
@@ -88,5 +105,13 @@ L'algoritmo che si utilizza per la traduzione dal modello E-R in modello relazio
 		{immagini/traduzione-associazioni-M-N}
 		
 		\caption{Traduzione di associazioni binarie M:N}
-		\label{f:trad-assoc-m-n}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]
+		{immagini/traduzione-associazioni-ternarie}
+		
+		\caption{Traduzione di associazioni ternarie}
+		\label{f:trad-assoc}
 	\end{figure}

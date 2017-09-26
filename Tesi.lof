@@ -10,23 +10,45 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Entit\IeC {\`a} Utente Amministratore\relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1}{\ignorespaces Entit\IeC {\`a} Utente\relax }}{3}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Schema E-R completo\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {2}{\ignorespaces Entit\IeC {\`a} Amministratore\relax }}{4}{figure.caption.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Entit\IeC {\`a} Registrato\relax }}{4}{figure.caption.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Entit\IeC {\`a} Arbitro\relax }}{4}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Entit\IeC {\`a} Gestore Squadra\relax }}{5}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces Entit\IeC {\`a} Torneo\relax }}{5}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces Entit\IeC {\`a} Partita\relax }}{6}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Entit\IeC {\`a} Referto\relax }}{7}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces Entit\IeC {\`a} Squadra\relax }}{7}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces Entit\IeC {\`a} Classifica\relax }}{8}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces Entit\IeC {\`a} Giocatore\relax }}{9}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12}{\ignorespaces Schema E-R completo\relax }}{12}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Traduzione di entit\IeC {\`a}\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {13}{\ignorespaces Traduzione di entit\IeC {\`a}\relax }}{15}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Traduzione di entit\IeC {\`a} deboli\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {14}{\ignorespaces Traduzione di entit\IeC {\`a} specializzate\relax }}{15}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Traduzione di associazioni binarie 1:1\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {15}{\ignorespaces Traduzione di entit\IeC {\`a} deboli\relax }}{16}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Traduzione di associazioni binarie 1:N\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {16}{\ignorespaces Traduzione di associazioni binarie 1:1\relax }}{16}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Traduzione di associazioni binarie M:N\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {17}{\ignorespaces Traduzione di associazioni binarie 1:N\relax }}{17}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18}{\ignorespaces Traduzione di associazioni binarie M:N\relax }}{17}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {19}{\ignorespaces Traduzione di associazioni ternarie\relax }}{18}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
