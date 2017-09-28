@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.7.26)  27 SEP 2017 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  27 SEP 2017 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,27 +6,27 @@ entering extended mode
 (./Tesi.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrreprt.cls
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrreprt.cls
 Document Class: scrreprt 2017/04/13 v3.23 KOMA-Script document class (report)
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrbase.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(d:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlfile.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2017/04/13 v3.23 KOMA-Script package (loading files)
 
 Package scrlfile, 2017/04/13 v3.23 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (c:/texlive/2017/texmf-dist/tex/latex/koma-script/tocbasic.sty
+))) (d:/texlive/2017/texmf-dist/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2017/04/13 v3.23 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -63,11 +63,11 @@ Class scrreprt Info: You've used standard option `openany'.
 Class scrreprt Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2272.
 
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2017/04/13 v3.23 KOMA-Script font size class option (11pt
 )
 )
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/typearea.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2017/04/13 v3.23 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count79
@@ -139,26 +139,26 @@ LaTeX Info: Redefining \textsubscript on input line 4841.
 \c@table=\count88
 Class scrreprt Info: Redefining `\numberline' on input line 5988.
 \bibindent=\dimen102
-) (c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+) (d:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+(d:/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+(d:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+(d:/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+(d:/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -399,7 +399,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+(d:/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -440,7 +440,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+(d:/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -464,13 +464,13 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
+(d:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2017/05/19 3.10 The Babel package
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
+(d:/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/01/24 v3.3q English support from the babel system
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+(d:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2017/05/19 3.10 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
@@ -479,46 +479,46 @@ File: babel.def 2017/05/19 3.10 Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(c:/texlive/2017/texmf-dist/tex/generic/babel-italian/italian.ldf
+(d:/texlive/2017/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2015/03/26 v1.3n Italian support from the babel system
 \it@lettering=\count90
 \it@doublequoteactive=\count91
 \it@ISOcompliance=\count92
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(d:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count93
 )
-(c:/texlive/2017/texmf-dist/tex/latex/frontespizio/frontespizio.sty
+(d:/texlive/2017/texmf-dist/tex/latex/frontespizio/frontespizio.sty
 Package: frontespizio 2011/09/21 1.4a (Enrico Gregorio)
 
-(c:/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
+(d:/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks17
 \AP@partial=\box28
 \AP@footins=\box29
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(d:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+(d:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count94
@@ -526,28 +526,28 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+(d:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(d:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks18
 )
-(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(d:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \front@out=\write3
 \openout3 = `Tesi-frn.tex'.
 
 )
-(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+(d:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count95
 \lst@gtempboxa=\box30
 \lst@token=\toks19
@@ -561,30 +561,30 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \lst@lineno=\count100
 \lst@maxwidth=\dimen109
 
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+(d:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count101
 \lst@skipnumbers=\count102
 \lst@framebox=\box31
 )
-(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(c:/texlive/2017/texmf-dist/tex/latex/quoting/quoting.sty
+(d:/texlive/2017/texmf-dist/tex/latex/quoting/quoting.sty
 Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
 
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(d:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -595,24 +595,24 @@ Package etexcmds Info: Could not find \expanded.
 )))
 \quo@toppartop=\skip56
 )
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen110
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen111
 )
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count103
@@ -653,17 +653,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks25
 \thm@bodyfont=\toks26
@@ -675,14 +675,14 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip62
 \dth@everypar=\toks30
 )
-(c:/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
+(d:/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2016/02/16 v1.5c package for extended references (FMi)
 \c@vrcnt=\count115
 )
-(c:/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
+(d:/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 
-(c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+(d:/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen119
 \extrarowheight=\dimen120
@@ -698,7 +698,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@cols=\count116
 \TX@ftn=\toks32
 )
-(c:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
+(d:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@reset=\count117
 \csq@gtype=\count118
@@ -708,22 +708,22 @@ Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@tshold=\count122
 \csq@ltx@everypar=\toks33
 
-(c:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
+(d:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(c:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'italian' -> 'italian/guillemets'.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -731,22 +731,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
+(d:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count123
 
-(c:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
+(d:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+(d:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty
+(d:/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
-(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+(d:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(d:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
 \integerpart=\count124
 \decimalpart=\count125
@@ -807,7 +807,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'philosophy-modern.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -887,13 +887,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 \c@textcitecount=\count299
 \c@textcitetotal=\count300
@@ -907,23 +907,23 @@ Package biblatex Info: Trying to load bibliography style 'philosophy-modern'...
 
 Package biblatex Info: ... file 'philosophy-modern.bbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-modern.bbx
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-modern.bbx
 File: philosophy-modern.bbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load bibliography style 'philosophy-classic'..
 .
 Package biblatex Info: ... file 'philosophy-classic.bbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-classic.bb
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-classic.bb
 x
 File: philosophy-classic.bbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
- (c:/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+ (d:/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 File: authoryear.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count306
 \c@bbx:relatedtotal=\count307
@@ -932,7 +932,7 @@ Package biblatex Info: Trying to load bibliography style 'philosophy-standard'.
 ..
 Package biblatex Info: ... file 'philosophy-standard.bbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-standard.b
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-standard.b
 bx
 File: philosophy-standard.bbx 2017/04/13 v1.9.5 A set of styles for biblatex
 \c@maxnamesincross=\count308
@@ -947,17 +947,17 @@ Package biblatex Info: Redefining '\bbx@crossref@incollection'.
 Package biblatex Info: Trying to load citation style 'philosophy-modern'...
 Package biblatex Info: ... file 'philosophy-modern.cbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-modern.cbx
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-modern.cbx
 File: philosophy-modern.cbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load citation style 'philosophy-classic'...
 Package biblatex Info: ... file 'philosophy-classic.cbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-classic.cb
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/philosophy-classic.cb
 x
 File: philosophy-classic.cbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
- (c:/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
+ (d:/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
 File: authoryear-comp.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -979,16 +979,16 @@ Package biblatex Info: Redefining '\citedate'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
+(d:/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+(d:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+(d:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen126
@@ -1017,26 +1017,26 @@ Package caption Info: listings package is loaded.
 \sf@top=\skip84
 \sf@bottom=\skip85
 )
-(c:/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
+(d:/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count318
 )
-(c:/texlive/2017/texmf-dist/tex/latex/eurosym/eurosym.sty
+(d:/texlive/2017/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box34
 )
-(c:/texlive/2017/texmf-dist/tex/latex/classicthesis/classicthesis.sty
+(d:/texlive/2017/texmf-dist/tex/latex/classicthesis/classicthesis.sty
 Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
 thesis
 
-(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1065,21 +1065,21 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(d:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen134
 \Hy@linkcounter=\count319
 \Hy@pagecounter=\count320
 
-(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+(d:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count321
 
-(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -1111,22 +1111,22 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+(d:/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count327
 \c@bookmark@seq@number=\count328
 
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(d:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip86
 )
-(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(d:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -1140,20 +1140,20 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
+(d:/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/mathpazo.sty
+(d:/texlive/2017/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup6
 )
-(c:/texlive/2017/texmf-dist/tex/latex/bera/beramono.sty
+(d:/texlive/2017/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/eulervm/eulervm.sty
+(d:/texlive/2017/texmf-dist/tex/latex/eulervm/eulervm.sty
 Package: eulervm 2005/01/11 v4.0 (WaS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks34
 \MT@count=\count329
@@ -1162,7 +1162,7 @@ LaTeX Info: Redefining \textls on input line 774.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count330
 
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 916.
@@ -1171,7 +1171,7 @@ LaTeX Info: Redefining \lslig on input line 916.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 ))
 Package classicthesis Info: A4 paper, Palatino or other on input line 272.
@@ -1192,7 +1192,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 272.
 
-(c:/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+(d:/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen139
 \lightrulewidth=\dimen140
@@ -1212,17 +1212,17 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count334
 \@thisrulewidth=\dimen151
 )
-(c:/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
+(d:/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
 Package classicthesis Info: Using pdftex/microtype for character spacing.Make s
 ure your pdftex is version 1.40 or higher. on input line 345.
 
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2017/04/13 v3.23 KOMA-Script package (end user interf
 ace for scrlayer)
 
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlayer.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrlayer.sty
 Package: scrlayer 2017/04/13 v3.23 KOMA-Script package (defining layers and pag
 e styles)
 Package scrlayer Info: Using already defined \footheight
@@ -1251,7 +1251,7 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              Nevertheless, using requested
 (scrreprt)              package `titlesec' on input line 378.
 
-(c:/texlive/2017/texmf-dist/tex/latex/titlesec/titlesec.sty
+(d:/texlive/2017/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box35
 \beforetitleunit=\skip88
@@ -1288,7 +1288,7 @@ Package titlesec Warning: Non standard sectioning command detected
 Class scrreprt Warning: Activating an ugly workaround for a missing
 (scrreprt)              feature of package `titlesec` on input line 378.
 
-(c:/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
+(d:/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
 \cftparskip=\skip90
@@ -1347,11 +1347,11 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \listingslabelwidth=\skip140
 
 Using KOMA-command "deffootnote" for footnote setup
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrtime.sty
+(d:/texlive/2017/texmf-dist/tex/latex/koma-script/scrtime.sty
 Package: scrtime 2017/04/13 v3.23 KOMA-Script package (time of LaTeX run)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/carlisle/remreset.sty))
-(c:/texlive/2017/texmf-dist/tex/latex/arsclassica/arsclassica.sty
+(d:/texlive/2017/texmf-dist/tex/latex/carlisle/remreset.sty))
+(d:/texlive/2017/texmf-dist/tex/latex/arsclassica/arsclassica.sty
 Package: arsclassica 2017/02/01
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
@@ -1372,7 +1372,7 @@ Package typearea Info: These are the values describing the layout:
 LaTeX Info: Redefining \spacedallcaps on input line 64.
 LaTeX Info: Redefining \spacedlowsmallcaps on input line 64.
 
-(c:/texlive/2017/texmf-dist/tex/latex/titlesec/block.tss
+(d:/texlive/2017/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2016/03/15
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 186.
@@ -1399,7 +1399,7 @@ Package hyperref Warning: Option `pdfpagelabels' has already been used,
 \c@legge=\count339
 \c@murphy=\count340
 
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+(d:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package typearea Info: These are the values describing the layout:
@@ -1425,24 +1425,24 @@ Package biblatex Info: Trying to load language 'italian' -> 'italian-philosophy
 '...
 Package biblatex Info: ... file 'italian-philosophy.lbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/italian-philosophy.lb
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/italian-philosophy.lb
 x
 File: italian-philosophy.lbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
- (c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+ (d:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 ))
 Package biblatex Info: Trying to load language 'english' -> 'english-philosophy
 '...
 Package biblatex Info: ... file 'english-philosophy.lbx' found.
 
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/english-philosophy.lb
+(d:/texlive/2017/texmf-dist/tex/latex/biblatex-philosophy/english-philosophy.lb
 x
 File: english-philosophy.lbx 2017/04/13 v1.9.5 A set of styles for biblatex
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (d:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )) (./Tesi.aux)
 \openout1 = `Tesi.aux'.
@@ -1462,13 +1462,13 @@ LaTeX Font Info:    ... okay on input line 93.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
 LaTeX Font Info:    ... okay on input line 93.
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 93.
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplj.fd
+(d:/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 LaTeX Info: Redefining \it@ocap on input line 93.
 LaTeX Info: Redefining \it@ccap on input line 93.
 
-(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(d:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count341
 \scratchdimen=\dimen157
@@ -1481,10 +1481,10 @@ LaTeX Info: Redefining \it@ccap on input line 93.
 \MPnumerator=\count345
 \makeMPintoPDFobject=\count346
 \everyMPtoPDFconversion=\toks37
-) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (d:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+(d:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1494,7 +1494,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1516,10 +1516,10 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 93.
- (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+ (d:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count348
@@ -1543,7 +1543,7 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (./materialeInizialeFinale/Frontespizio.tex
@@ -1556,13 +1556,13 @@ Package pdftex.def Info: Tesi-frn.pdf used on input line 9.
 
 
 
- <./Tesi-frn.pdf{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}>
+ <./Tesi-frn.pdf{d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}>
 ])
 (./materialeInizialeFinale/Indici.tex
 LaTeX Font Info:    Try loading font information for T1+iwona on input line 12.
 
 
-(c:/texlive/2017/texmf-dist/tex/latex/iwona/t1iwona.fd
+(d:/texlive/2017/texmf-dist/tex/latex/iwona/t1iwona.fd
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 )
 Package microtype Info: Loading generic settings for font family
@@ -1577,35 +1577,35 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Try loading font information for U+zeur on input line 91.
 
-(c:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeur.fd
+(d:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-eur.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeus on input line 91.
 
-(c:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeus.fd
+(d:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-eus.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeuex on input line 91.
 
-(c:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeuex.fd
+(d:/texlive/2017/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(d:/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 91.
 
 
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+(d:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 Package microtype Info: Loading generic settings for font family
@@ -1776,89 +1776,82 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 chapter 3.
 [16
 
-] <immagini/traduzione-entita.pdf, id=1360, 673.51625pt x 331.2375pt>
+] <immagini/traduzione-entita.pdf, id=1361, 903.375pt x 391.4625pt>
 File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita.pdf>
-Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 65.
-(pdftex.def)             Requested size: 314.50226pt x 154.67584pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<immagini/traduzione-entita-specializzate.pdf, id=1361, 695.59875pt x 572.1375p
-t>
+Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 68.
+(pdftex.def)             Requested size: 314.50226pt x 136.28519pt.
+ [17]
+<immagini/traduzione-entita-specializzate.pdf, id=1366, 925.4575pt x 632.3625pt
+>
 File: immagini/traduzione-entita-specializzate.pdf Graphic file (type pdf)
  <use immagini/traduzione-entita-specializzate.pdf>
 Package pdftex.def Info: immagini/traduzione-entita-specializzate.pdf used on i
-nput line 73.
-(pdftex.def)             Requested size: 351.49887pt x 289.10611pt.
+nput line 76.
+(pdftex.def)             Requested size: 351.49887pt x 240.1748pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<immagini/traduzione-entita-deboli.pdf, id=1362, 996.72375pt x 692.5875pt>
+<immagini/traduzione-entita-deboli.pdf, id=1367, 925.4575pt x 692.5875pt>
 File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita-deboli.pdf>
 Package pdftex.def Info: immagini/traduzione-entita-deboli.pdf used on input li
-ne 81.
-(pdftex.def)             Requested size: 370.0pt x 257.0988pt.
+ne 84.
+(pdftex.def)             Requested size: 370.0pt x 276.90327pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-1.pdf, id=1363, 996.72375pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-1.pdf, id=1368, 925.4575pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-1.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
- line 89.
-(pdftex.def)             Requested size: 370.0pt x 257.0988pt.
+ line 92.
+(pdftex.def)             Requested size: 370.0pt x 276.90327pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-N.pdf, id=1364, 996.72375pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-N.pdf, id=1369, 975.645pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-N.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
- line 97.
-(pdftex.def)             Requested size: 370.0pt x 257.0988pt.
+ line 100.
+(pdftex.def)             Requested size: 370.0pt x 262.65758pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-M-N.pdf, id=1365, 1018.80624pt x 874.26625pt>
+<immagini/traduzione-associazioni-M-N.pdf, id=1370, 1018.80624pt x 874.26625pt>
 File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
 <use immagini/traduzione-associazioni-M-N.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
- line 105.
+ line 108.
 (pdftex.def)             Requested size: 370.0pt x 317.51038pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-ternarie.pdf, id=1366, 1055.945pt x 1053.9375
-pt>
+<immagini/traduzione-associazioni-ternarie.pdf, id=1371, 1034.86626pt x 1053.93
+75pt>
 File: immagini/traduzione-associazioni-ternarie.pdf Graphic file (type pdf)
  <use immagini/traduzione-associazioni-ternarie.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-ternarie.pdf used on 
-input line 113.
-(pdftex.def)             Requested size: 370.0pt x 369.28569pt.
+input line 116.
+(pdftex.def)             Requested size: 370.0pt x 376.81197pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./capitoli/capitolo-4.tex [17] [18 <./immagini/traduzione-entita.pdf> <./imm
-agini/traduzione-entita-specializzate.pdf>] [19 <./immagini/traduzione-entita-d
-eboli.pdf> <./immagini/traduzione-associazioni-1-1.pdf>] [20 <./immagini/traduz
-ione-associazioni-1-N.pdf> <./immagini/traduzione-associazioni-M-N.pdf>]
-[21 <./immagini/traduzione-associazioni-ternarie.pdf>]
+) (./capitoli/capitolo-4.tex [18 <./immagini/traduzione-entita.pdf> <./immagini
+/traduzione-entita-specializzate.pdf>] [19 <./immagini/traduzione-entita-deboli
+.pdf> <./immagini/traduzione-associazioni-1-1.pdf>] [20 <./immagini/traduzione-
+associazioni-1-N.pdf> <./immagini/traduzione-associazioni-M-N.pdf>] [21 <./imma
+gini/traduzione-associazioni-ternarie.pdf>]
 chapter 4.
 [22
 
@@ -1924,7 +1917,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--5
 [24]
 chapter 5.
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 17.
-(c:/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
+(d:/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1955,32 +1948,32 @@ Package logreq Info: Writing requests to 'Tesi.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  25383 strings out of 492995
- 442953 string characters out of 6136402
- 1305874 words of memory out of 5000000
+ 442942 string characters out of 6136402
+ 1308874 words of memory out of 5000000
  28038 multiletter control sequences out of 15000+600000
  81320 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 69i,23n,92p,8817b,3640s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2017/texm
-f-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{c:/texlive/2017/texmf-dist/fonts/enc
-/dvips/iwona/ec-iwona-sc.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmss17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2017
-/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2017/texmf-dist/font
-s/type1/public/bera/fvmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/nowacki/
-iwona/iwonab.pfb><c:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.
-pfb><c:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive
-/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2017/texmf-dis
-t/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/u
+ 69i,23n,92p,8817b,3618s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{d:/texlive/2017/texm
+f-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{d:/texlive/2017/texmf-dist/fonts/enc
+/dvips/iwona/ec-iwona-sc.enc}<d:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmss10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmss17.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><d:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><d:/texlive/2017
+/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><d:/texlive/2017/texmf-dist/font
+s/type1/public/bera/fvmr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/
+iwona/iwonab.pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.
+pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><d:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
+/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dis
+t/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (38 pages, 2051486 bytes).
+Output written on Tesi.pdf (38 pages, 2102200 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 1904 compressed objects within 20 object streams
+ 2327 PDF objects out of 2487 (max. 8388607)
+ 1922 compressed objects within 20 object streams
  417 named destinations out of 1000 (max. 500000)
  15021 words of extra memory for PDF output out of 17280 (max. 10000000)
 
