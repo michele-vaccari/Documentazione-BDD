@@ -1,0 +1,9 @@
+insert 1 --> Arbitro.java --> insert
+insert 2 --> Marcatore.java --> insert
+
+update 1 --> Squadra.java --> update
+update 2 --> Utente.java --> delete
+
+select 1 --> FormazioneService.java --> getReferti
+select 2 --> RefertoService.java --> getRefertiAdmin
+select 3 --> Referto ArbitroService.java --> getCartelliniFormazione

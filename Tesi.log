@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  27 SEP 2017 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  9 OCT 2017 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1672,12 +1672,12 @@ chapter 2.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-<immagini/01-utente.pdf, id=478, 311.1625pt x 183.68625pt>
+<immagini/01-utente.pdf, id=478, 291.0875pt x 183.68625pt>
 File: immagini/01-utente.pdf Graphic file (type pdf)
 
 <use immagini/01-utente.pdf>
 Package pdftex.def Info: immagini/01-utente.pdf used on input line 20.
-(pdftex.def)             Requested size: 185.0pt x 109.20917pt.
+(pdftex.def)             Requested size: 185.0pt x 116.74315pt.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10> not available
 (Font)              Font shape `T1/iwona/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
@@ -1699,12 +1699,12 @@ File: immagini/03-registrato.pdf Graphic file (type pdf)
 Package pdftex.def Info: immagini/03-registrato.pdf used on input line 85.
 (pdftex.def)             Requested size: 222.00226pt x 45.03606pt.
  [4 <./immagini/02-amministratore.pdf> <./immagini/03-registrato.pdf>]
-<immagini/04-arbitro.pdf, id=559, 355.3275pt x 141.52875pt>
+<immagini/04-arbitro.pdf, id=559, 355.3275pt x 208.78pt>
 File: immagini/04-arbitro.pdf Graphic file (type pdf)
 
 <use immagini/04-arbitro.pdf>
 Package pdftex.def Info: immagini/04-arbitro.pdf used on input line 112.
-(pdftex.def)             Requested size: 222.00226pt x 88.42717pt.
+(pdftex.def)             Requested size: 222.00226pt x 130.44574pt.
 
 <immagini/05-gestore-squadra.pdf, id=560, 171.64125pt x 71.26625pt>
 File: immagini/05-gestore-squadra.pdf Graphic file (type pdf)
@@ -1713,15 +1713,15 @@ File: immagini/05-gestore-squadra.pdf Graphic file (type pdf)
 Package pdftex.def Info: immagini/05-gestore-squadra.pdf used on input line 142
 .
 (pdftex.def)             Requested size: 111.00113pt x 46.0876pt.
-
-<immagini/06-torneo.pdf, id=561, 271.0125pt x 211.79124pt>
+ [5 <./immagini/04-arbitro.pdf> <./immagini/05-gestore-squadra.pdf>]
+<immagini/06-torneo.pdf, id=599, 271.0125pt x 211.79124pt>
 File: immagini/06-torneo.pdf Graphic file (type pdf)
 
 <use immagini/06-torneo.pdf>
 Package pdftex.def Info: immagini/06-torneo.pdf used on input line 154.
 (pdftex.def)             Requested size: 185.0pt x 144.57845pt.
- [5 <./immagini/04-arbitro.pdf> <./immagini/05-gestore-squadra.pdf>] <immagini/
-07-partita.pdf, id=595, 261.97874pt x 210.7875pt>
+
+<immagini/07-partita.pdf, id=600, 261.97874pt x 210.7875pt>
 File: immagini/07-partita.pdf Graphic file (type pdf)
 
 <use immagini/07-partita.pdf>
@@ -1732,28 +1732,32 @@ Package pdftex.def Info: immagini/07-partita.pdf used on input line 193.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./immagini/06-torneo.pdf>]
-<immagini/08-referto.pdf, id=627, 281.05pt x 210.7875pt>
+<immagini/08-referto.pdf, id=632, 281.05pt x 210.7875pt>
 File: immagini/08-referto.pdf Graphic file (type pdf)
 
 <use immagini/08-referto.pdf>
 Package pdftex.def Info: immagini/08-referto.pdf used on input line 236.
 (pdftex.def)             Requested size: 185.0pt x 138.75029pt.
- [7 <./immagini/07-partita.pdf> <./immagini/08-referto.pdf>] <immagini/09-squad
-ra.pdf, id=697, 337.26pt x 225.84375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./immagini/07-partita.pdf>]
+<immagini/09-squadra.pdf, id=670, 337.26pt x 225.84375pt>
 File: immagini/09-squadra.pdf Graphic file (type pdf)
 
 <use immagini/09-squadra.pdf>
 Package pdftex.def Info: immagini/09-squadra.pdf used on input line 272.
 (pdftex.def)             Requested size: 222.00226pt x 148.66447pt.
- [8 <./immagini/09-squadra.pdf>]
-<immagini/10-classifica.pdf, id=754, 317.185pt x 213.79875pt>
+ [8 <./immagini/08-referto.pdf> <./immagini/09-squadra.pdf>] <immagini/10-class
+ifica.pdf, id=759, 317.185pt x 213.79875pt>
 File: immagini/10-classifica.pdf Graphic file (type pdf)
 
 <use immagini/10-classifica.pdf>
 Package pdftex.def Info: immagini/10-classifica.pdf used on input line 320.
 (pdftex.def)             Requested size: 222.00226pt x 149.64505pt.
  [9 <./immagini/10-classifica.pdf>]
-<immagini/11-giocatore.pdf, id=803, 417.56pt x 237.88875pt>
+<immagini/11-giocatore.pdf, id=808, 417.56pt x 237.88875pt>
 File: immagini/11-giocatore.pdf Graphic file (type pdf)
 
 <use immagini/11-giocatore.pdf>
@@ -1761,7 +1765,7 @@ Package pdftex.def Info: immagini/11-giocatore.pdf used on input line 362.
 (pdftex.def)             Requested size: 296.00113pt x 168.64445pt.
  [10 <./immagini/11-giocatore.pdf>] [11]
 [12] [13]
-<immagini/diagramma-ER-completo.pdf, id=895, 1897.0875pt x 1172.38pt>
+<immagini/diagramma-ER-completo.pdf, id=900, 1897.0875pt x 1172.38pt>
 File: immagini/diagramma-ER-completo.pdf Graphic file (type pdf)
 
 <use immagini/diagramma-ER-completo.pdf>
@@ -1776,14 +1780,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 chapter 3.
 [16
 
-] <immagini/traduzione-entita.pdf, id=1361, 903.375pt x 391.4625pt>
+] <immagini/traduzione-entita.pdf, id=1371, 903.375pt x 391.4625pt>
 File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita.pdf>
 Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 68.
 (pdftex.def)             Requested size: 314.50226pt x 136.28519pt.
  [17]
-<immagini/traduzione-entita-specializzate.pdf, id=1366, 925.4575pt x 632.3625pt
+<immagini/traduzione-entita-specializzate.pdf, id=1376, 925.4575pt x 632.3625pt
 >
 File: immagini/traduzione-entita-specializzate.pdf Graphic file (type pdf)
  <use immagini/traduzione-entita-specializzate.pdf>
@@ -1791,7 +1795,7 @@ Package pdftex.def Info: immagini/traduzione-entita-specializzate.pdf used on i
 nput line 76.
 (pdftex.def)             Requested size: 351.49887pt x 240.1748pt.
 
-<immagini/traduzione-entita-deboli.pdf, id=1367, 925.4575pt x 692.5875pt>
+<immagini/traduzione-entita-deboli.pdf, id=1377, 925.4575pt x 692.5875pt>
 File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita-deboli.pdf>
@@ -1802,7 +1806,7 @@ ne 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-1.pdf, id=1368, 925.4575pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-1.pdf, id=1378, 925.4575pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-1.pdf>
@@ -1813,7 +1817,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-N.pdf, id=1369, 975.645pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-N.pdf, id=1379, 975.645pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-N.pdf>
@@ -1825,7 +1829,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-M-N.pdf, id=1370, 1018.80624pt x 874.26625pt>
+<immagini/traduzione-associazioni-M-N.pdf, id=1380, 1018.80624pt x 874.26625pt>
 File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
 <use immagini/traduzione-associazioni-M-N.pdf>
 Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
@@ -1836,7 +1840,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-ternarie.pdf, id=1371, 1034.86626pt x 1053.93
+<immagini/traduzione-associazioni-ternarie.pdf, id=1381, 1034.86626pt x 1053.93
 75pt>
 File: immagini/traduzione-associazioni-ternarie.pdf Graphic file (type pdf)
  <use immagini/traduzione-associazioni-ternarie.pdf>
@@ -1929,9 +1933,9 @@ Package microtype Info: Loading generic settings for font family
  [25
 
 ] [26] [27] [28]
-[29] [30] [31] [32] [33])
+[29] [30] [31] [32] [33] [34])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
- [34]
+ [35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
  (./Tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
@@ -1947,13 +1951,13 @@ Package logreq Info: Writing requests to 'Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25383 strings out of 492995
- 442942 string characters out of 6136402
- 1308874 words of memory out of 5000000
- 28038 multiletter control sequences out of 15000+600000
+ 25369 strings out of 492995
+ 442799 string characters out of 6136402
+ 1317874 words of memory out of 5000000
+ 28014 multiletter control sequences out of 15000+600000
  81320 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 69i,23n,92p,8817b,3618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,22n,92p,8817b,2171s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{d:/texlive/2017/texm
 f-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{d:/texlive/2017/texmf-dist/fonts/enc
 /dvips/iwona/ec-iwona-sc.enc}<d:/texlive/2017/texmf-dist/fonts/type1/public/ams
@@ -1970,10 +1974,10 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
 /2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (38 pages, 2102200 bytes).
+Output written on Tesi.pdf (39 pages, 2107130 bytes).
 PDF statistics:
- 2327 PDF objects out of 2487 (max. 8388607)
- 1922 compressed objects within 20 object streams
- 417 named destinations out of 1000 (max. 500000)
+ 2352 PDF objects out of 2487 (max. 8388607)
+ 1942 compressed objects within 20 object streams
+ 427 named destinations out of 1000 (max. 500000)
  15021 words of extra memory for PDF output out of 17280 (max. 10000000)
 

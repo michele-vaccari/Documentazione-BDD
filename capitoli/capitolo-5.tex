@@ -16,14 +16,14 @@ Struttura della tabella \emph{UTENTE}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `UTENTE` (
+    `ID_Utente` INT UNSIGNED NOT NULL,
 	`Email` VARCHAR(30) NOT NULL,
-	`Password` VARCHAR(32) NOT NULL,
-	`Chiave_privata` VARCHAR(32) NOT NULL,
+	`Password` VARCHAR(16) NOT NULL,
 	`Nome` VARCHAR(30) NOT NULL,
 	`Cognome` VARCHAR(30) NOT NULL,
 	`Tipo` VARCHAR(1) NOT NULL,
-	`Attivo` BOOLEAN NOT NULL DEFAULT TRUE,
-	PRIMARY KEY (`Email`)
+	`Attivo` VARCHAR(1) NOT NULL DEFAULT 'Y',
+	PRIMARY KEY (`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -32,9 +32,9 @@ Struttura della tabella \emph{AMMINISTRATORE}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `AMMINISTRATORE` (
-	`Email_U` VARCHAR(30) NOT NULL,
-	PRIMARY KEY (`Email_U`),
-	FOREIGN KEY (`Email_U`) REFERENCES UTENTE(`Email`)
+	`ID_Utente` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`ID_Utente`),
+	FOREIGN KEY (`ID_Utente`) REFERENCES UTENTE(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -45,13 +45,13 @@ Struttura della tabella \emph{REGISTRATO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `REGISTRATO` (
-	`Email_U` VARCHAR(30) NOT NULL,
-	`Email_A` VARCHAR(30) NOT NULL,
+	`ID_Utente` INT UNSIGNED NOT NULL,
+	`ID_Amministratore` INT UNSIGNED NOT NULL,
 	`Telefono` VARCHAR(15) NOT NULL,
 	`Indirizzo` VARCHAR(50) NOT NULL,
-	PRIMARY KEY (`Email_U`),
-	FOREIGN KEY (`Email_U`) REFERENCES UTENTE(`Email`),
-	FOREIGN KEY (`Email_A`) REFERENCES AMMINISTRATORE(`Email_U`)
+	PRIMARY KEY (`ID_Utente`),
+	FOREIGN KEY (`ID_Utente`) REFERENCES UTENTE(`ID_Utente`),
+	FOREIGN KEY (`ID_Amministratore`) REFERENCES AMMINISTRATORE(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -60,12 +60,13 @@ Struttura della tabella \emph{ARBITRO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `ARBITRO` (
-	`Email_R` VARCHAR(30) NOT NULL,
-	`Data_di_nascita` DATE NOT NULL,
-	`Nazionalita` VARCHAR(50) NOT NULL,
+	`ID_Registrato` INT UNSIGNED NOT NULL,
+	`Data_di_nascita` VARCHAR(10) NOT NULL,
+	`Nazionalita` VARCHAR(20) NOT NULL,
 	`Foto` VARCHAR(50) NOT NULL,
-	PRIMARY KEY (`Email_R`),
-	FOREIGN KEY (`Email_R`) REFERENCES REGISTRATO(`Email_U`)
+	`Carriera` TEXT(5000),
+	PRIMARY KEY (`ID_Registrato`),
+	FOREIGN KEY (`ID_Registrato`) REFERENCES REGISTRATO(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -74,24 +75,26 @@ Struttura della tabella \emph{GESTORE\_SQUADRA}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `GESTORE_SQUADRA` (
-	`Email_R` VARCHAR(30) NOT NULL,
-	PRIMARY KEY (`Email_R`),
-	FOREIGN KEY (`Email_R`) REFERENCES REGISTRATO(`Email_U`)
+	`ID_Registrato` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`ID_Registrato`),
+	FOREIGN KEY (`ID_Registrato`) REFERENCES REGISTRATO(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
+
+\newpage
 
 \subsection{Torneo}
 Struttura della tabella \emph{TORNEO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `TORNEO` (
-	`Id` INT UNSIGNED NOT NULL,
-	`Email_A` VARCHAR(30) NOT NULL,
-	`Tipo` CHAR(1) NOT NULL,
+	`ID_Torneo` INT UNSIGNED NOT NULL,
+	`ID_Amministratore` INT UNSIGNED NOT NULL,
+	`Tipologia` CHAR(1) NOT NULL,
 	`Nome` VARCHAR(30) NOT NULL,
 	`Descrizione` TEXT(5000),
-	PRIMARY KEY (`Id`),
-	FOREIGN KEY (`Email_A`) REFERENCES AMMINISTRATORE(`Email_U`)
+	PRIMARY KEY (`ID_Torneo`),
+	FOREIGN KEY (`ID_Amministratore`) REFERENCES AMMINISTRATORE(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -100,12 +103,12 @@ Struttura della tabella \emph{PARTITA}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `PARTITA` (
-	`Id` INT UNSIGNED NOT NULL,
-	`Tipo_torneo` CHAR(1) NOT NULL,
+	`ID_Partita` INT UNSIGNED NOT NULL,
+	`Tipo` CHAR(1) NOT NULL,
 	`Luogo` VARCHAR(30) NOT NULL,
-	`Data` DATE NOT NULL,
-	`Ora` TIME NOT NULL,
-	PRIMARY KEY (`Id`)
+	`Data_partita` VARCHAR(30) NOT NULL,
+	`Ora` VARCHAR(5) NOT NULL,
+	PRIMARY KEY (`ID_Partita`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -114,36 +117,39 @@ Struttura della tabella \emph{REFERTO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `REFERTO` (
-	`Id` INT UNSIGNED NOT NULL,
-	`Id_P` INT UNSIGNED NOT NULL,
-	`Email_AR` VARCHAR(30) NOT NULL,
-	`Ora_inizio` TIME NOT NULL,
-	`Ora_fine` TIME NOT NULL,
-	`Risultato` VARCHAR(10) NOT NULL,
-	`Compilato` BOOLEAN NOT NULL,
-	PRIMARY KEY (`Id`),
-	FOREIGN KEY (`Id_P`) REFERENCES PARTITA(`Id`),
-	FOREIGN KEY (`Email_AR`) REFERENCES ARBITRO(`Email_R`)
+	`ID_Referto` INT UNSIGNED NOT NULL,
+	`ID_Partita` INT UNSIGNED NOT NULL,
+	`ID_Arbitro` INT UNSIGNED NOT NULL,
+	`Ora_inizio` VARCHAR(5),
+	`Ora_fine` VARCHAR(5),
+	`Risultato` VARCHAR(10),
+	`Compilato` VARCHAR(1) NOT NULL,
+	PRIMARY KEY (`ID_Referto`),
+	FOREIGN KEY (`ID_Partita`) REFERENCES PARTITA(`ID_Partita`),
+	FOREIGN KEY (`ID_Arbitro`) REFERENCES ARBITRO(`ID_Registrato`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
+
+\newpage
 
 \subsection{Squadra}
 Struttura della tabella \emph{SQUADRA}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `SQUADRA` (
-	`Id` INT UNSIGNED NOT NULL,
-	`Email_G` VARCHAR(30) NOT NULL,
-	`Compilata` BOOLEAN NOT NULL,
-	`Nome` VARCHAR(30) NOT NULL,
+	`ID_Squadra` INT UNSIGNED NOT NULL,
+	`ID_Gestore` INT UNSIGNED NOT NULL,
+	`Compilata` VARCHAR(1) NOT NULL,
+	`Nome_squadra` VARCHAR(30) NOT NULL,
 	`Descrizione` TEXT(5000),
 	`Sede` VARCHAR(30),
-	`Logo` VARCHAR(50),
-	`Immagine` VARCHAR(50),
+	`Logo_squadra` VARCHAR(50),
+	`Immagine_squadra` VARCHAR(50),
 	`Nome_sponsor` VARCHAR(30),
 	`Logo_sponsor` VARCHAR(50),
-	PRIMARY KEY (`Id`),
-	FOREIGN KEY (`Email_G`) REFERENCES GESTORE_SQUADRA(`Email_R`)
+	PRIMARY KEY (`ID_Squadra`),
+	FOREIGN KEY (`ID_Gestore`)
+	            REFERENCES GESTORE_SQUADRA(`ID_Registrato`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -152,8 +158,8 @@ Struttura della tabella \emph{CLASSIFICA}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `CLASSIFICA` (
-	`Id_T` INT UNSIGNED NOT NULL,
-	`Id_S` INT UNSIGNED NOT NULL,
+	`ID_Torneo` INT UNSIGNED NOT NULL,
+	`ID_Squadra` INT UNSIGNED NOT NULL,
 	`Punti` INT UNSIGNED DEFAULT 0,
 	`Vittorie` INT UNSIGNED DEFAULT 0,
 	`Sconfitte` INT UNSIGNED DEFAULT 0,
@@ -161,49 +167,50 @@ CREATE TABLE IF NOT EXISTS `CLASSIFICA` (
 	`Partite` INT UNSIGNED DEFAULT 0,
 	`Goal_fatti` INT UNSIGNED DEFAULT 0,
 	`Goal_subiti` INT UNSIGNED DEFAULT 0,
-	PRIMARY KEY (`Id_T`, `Id_S`),
-	FOREIGN KEY (`Id_T`) REFERENCES TORNEO(`Id`),
-	FOREIGN KEY (`Id_S`) REFERENCES SQUADRA(`Id`)
+	PRIMARY KEY (`ID_Torneo`, `ID_Squadra`),
+	FOREIGN KEY (`ID_Torneo`) REFERENCES TORNEO(`ID_Torneo`),
+	FOREIGN KEY (`ID_Squadra`) REFERENCES SQUADRA(`ID_Squadra`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
+
+\newpage
 
 \subsection{Giocatore}
 Struttura della tabella \emph{GIOCATORE}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `GIOCATORE` (
-	`Id` INT UNSIGNED NOT NULL,
-	`Id_S` INT UNSIGNED NOT NULL,
-	`Attivo` BOOLEAN DEFAULT TRUE,
+	`ID_Giocatore` INT UNSIGNED NOT NULL,
+	`ID_Squadra` INT UNSIGNED NOT NULL,
+	`Attivo` VARCHAR(1) DEFAULT 'Y',
 	`Numero_maglia` INT UNSIGNED,
 	`Ruolo` VARCHAR(50) NOT NULL,
 	`Nome` VARCHAR(30) NOT NULL,
 	`Cognome` VARCHAR(30) NOT NULL,
-	`Data_di_nascita` DATE NOT NULL,
+	`Data_nascita` VARCHAR(10) NOT NULL,
 	`Nazionalita` VARCHAR(20) NOT NULL,
 	`Foto` VARCHAR(50) NOT NULL,
 	`Descrizione` TEXT(5000),
 	`Goal` INT UNSIGNED DEFAULT 0,
 	`Ammonizioni` INT UNSIGNED DEFAULT 0,
 	`Espulsioni` INT UNSIGNED DEFAULT 0,
-	PRIMARY KEY (`Id`),
-	FOREIGN KEY (`Id_S`) REFERENCES SQUADRA(`Id`)
+	PRIMARY KEY (`ID_Giocatore`),
+	FOREIGN KEY (`ID_Squadra`) REFERENCES SQUADRA(`ID_Squadra`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
-
-\newpage
 
 \subsection{Marcatore}
 Struttura della tabella \emph{MARCATORE}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `MARCATORE` (
-	`Id_R` INT UNSIGNED NOT NULL,
-	`Id_G` INT UNSIGNED NOT NULL,
+	`ID_Referto` INT UNSIGNED NOT NULL,
+	`ID_Giocatore` INT UNSIGNED NOT NULL,
 	`Goal` INT UNSIGNED DEFAULT 0,
-	PRIMARY KEY (`Id_R`, `Id_G`),
-	FOREIGN KEY (`Id_R`) REFERENCES REFERTO(`Id`),
-	FOREIGN KEY (`Id_G`) REFERENCES GIOCATORE(`Id`)
+	PRIMARY KEY (`ID_Referto`, `ID_Giocatore`),
+	FOREIGN KEY (`ID_Referto`) REFERENCES REFERTO(`ID_Referto`),
+	FOREIGN KEY (`ID_Giocatore`)
+	            REFERENCES GIOCATORE(`ID_Giocatore`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -212,11 +219,11 @@ Struttura della tabella \emph{PARTECIPANO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `PARTECIPANO` (
-	`Id_S` INT UNSIGNED NOT NULL,
-	`Id_T` INT UNSIGNED NOT NULL,
-	PRIMARY KEY (`Id_S`, `Id_T`),
-	FOREIGN KEY (`Id_S`) REFERENCES SQUADRA(`Id`),
-	FOREIGN KEY (`Id_T`) REFERENCES TORNEO(`Id`)
+	`ID_Squadra` INT UNSIGNED NOT NULL,
+	`ID_Torneo` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`ID_Squadra`, `ID_Torneo`),
+	FOREIGN KEY (`ID_Squadra`) REFERENCES SQUADRA(`ID_Squadra`),
+	FOREIGN KEY (`ID_Torneo`) REFERENCES TORNEO(`ID_Torneo`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -225,31 +232,31 @@ Struttura della tabella \emph{CARTELLINO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `CARTELLINO` (
-	`Id_R` INT UNSIGNED NOT NULL,
-	`Id_G` INT UNSIGNED NOT NULL,
+	`ID_Referto` INT UNSIGNED NOT NULL,
+	`ID_Giocatore` INT UNSIGNED NOT NULL,
 	`Numero` INT UNSIGNED DEFAULT 0,
-	`Ammonizione` BOOLEAN,
-	`Espulsione` BOOLEAN,
-	PRIMARY KEY (`Id_R`, `Id_G`),
-	FOREIGN KEY (`Id_R`) REFERENCES REFERTO(`Id`),
-	FOREIGN KEY (`Id_G`) REFERENCES GIOCATORE(`Id`)
+	`Ammonizione` VARCHAR(1),
+	`Espulsione` VARCHAR(1),
+	PRIMARY KEY (`ID_Referto`, `ID_Giocatore`),
+	FOREIGN KEY (`ID_Referto`) REFERENCES REFERTO(`ID_Referto`),
+	FOREIGN KEY (`ID_Giocatore`)
+	            REFERENCES GIOCATORE(`ID_Giocatore`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
-
-\newpage
 
 \subsection{Scelto}
 Struttura della tabella \emph{SCELTO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `SCELTO` (
-	`Id_P` INT UNSIGNED NOT NULL,
-	`Email_AR` VARCHAR(30) NOT NULL,
-	`Email_A` VARCHAR(30) NOT NULL,
-	PRIMARY KEY (`Id_P`, `Email_AR`, `Email_A`),
-	FOREIGN KEY (`Id_P`) REFERENCES PARTITA(`Id`),
-	FOREIGN KEY (`Email_AR`) REFERENCES ARBITRO(`Email_R`),
-	FOREIGN KEY (`Email_A`) REFERENCES AMMINISTRATORE(`Email_U`)
+	`ID_Partita` INT UNSIGNED NOT NULL,
+	`ID_Arbitro` INT UNSIGNED NOT NULL,
+	`ID_Amministratore` INT UNSIGNED NOT NULL,
+	PRIMARY KEY (`ID_Partita`, `ID_Arbitro`, `ID_Amministratore`),
+	FOREIGN KEY (`ID_Partita`) REFERENCES PARTITA(`ID_Partita`),
+	FOREIGN KEY (`ID_Arbitro`) REFERENCES ARBITRO(`ID_Registrato`),
+	FOREIGN KEY (`ID_Amministratore`)
+	            REFERENCES AMMINISTRATORE(`ID_Utente`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -258,32 +265,36 @@ Struttura della tabella \emph{FORMAZIONE}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `FORMAZIONE` (
-	`Id_R` INT UNSIGNED NOT NULL,
-	`Id_S` INT UNSIGNED NOT NULL,
-	`Id_G` INT UNSIGNED NOT NULL,
-	`Riserva` BOOLEAN NOT NULL,
-	PRIMARY KEY (`Id_R`, `Id_S`, `Id_G`),
-	FOREIGN KEY (`Id_R`) REFERENCES REFERTO(`Id`),
-	FOREIGN KEY (`Id_S`) REFERENCES SQUADRA(`Id`),
-	FOREIGN KEY (`Id_G`) REFERENCES GIOCATORE(`Id`)
+	`ID_Referto` INT UNSIGNED NOT NULL,
+	`ID_Squadra` INT UNSIGNED NOT NULL,
+	`ID_Giocatore` INT UNSIGNED NOT NULL,
+	`Riserva` VARCHAR(1) NOT NULL,
+	PRIMARY KEY (`ID_Referto`, `ID_Squadra`, `ID_Giocatore`),
+	FOREIGN KEY (`ID_Referto`) REFERENCES REFERTO(`ID_Referto`),
+	FOREIGN KEY (`ID_Squadra`) REFERENCES SQUADRA(`ID_Squadra`),
+	FOREIGN KEY (`ID_Giocatore`)
+	            REFERENCES GIOCATORE(`ID_Giocatore`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
+
+\newpage
 
 \subsection{Giocano}
 Struttura della tabella \emph{GIOCANO}:
 
 \begin{lstlisting}
 CREATE TABLE IF NOT EXISTS `GIOCANO` (
-	`Id_P` INT UNSIGNED NOT NULL,
-	`Id_S1` INT UNSIGNED NOT NULL,
-	`Id_S2` INT UNSIGNED NOT NULL,
-	`Id_T` INT UNSIGNED NOT NULL,
+	`ID_Partita` INT UNSIGNED NOT NULL,
+	`ID_SquadraA` INT UNSIGNED NOT NULL,
+	`ID_SquadraB` INT UNSIGNED NOT NULL,
+	`ID_Torneo` INT UNSIGNED NOT NULL,
 	`Nome_partita` VARCHAR(30) NOT NULL,
-	PRIMARY KEY (`Id_P`, `Id_S1`, `Id_S2`, `Id_T`),
-	FOREIGN KEY (`Id_P`) REFERENCES PARTITA(`Id`),
-	FOREIGN KEY (`Id_S1`) REFERENCES SQUADRA(`Id`),
-	FOREIGN KEY (`Id_S2`) REFERENCES SQUADRA(`Id`),
-	FOREIGN KEY (`Id_T`) REFERENCES TORNEO(`Id`)
+	PRIMARY KEY (`ID_Partita`, `ID_SquadraA`, `ID_SquadraB`,
+	             `ID_Torneo`),
+	FOREIGN KEY (`ID_Partita`) REFERENCES PARTITA(`ID_Partita`),
+	FOREIGN KEY (`ID_SquadraA`) REFERENCES SQUADRA(`ID_Squadra`),
+	FOREIGN KEY (`ID_SquadraB`) REFERENCES SQUADRA(`ID_Squadra`),
+	FOREIGN KEY (`ID_Torneo`) REFERENCES TORNEO(`ID_Torneo`)
 ) ENGINE = InnoDB;
 \end{lstlisting}
 
@@ -292,133 +303,140 @@ Tra le molte interrogazioni utilizzate dall'applicazione web riguardo il databas
 
 \subsection{INSERT}
 
-\subsubsection*{Inserimento arbitro}
+\subsection*{Inserimento di un nuovo arbitro}
+Quando l'amministratore inserisce un nuovo arbitro, viene settato nella tabella \emph{UTENTE} l'attributo \emph{Tipo} ``R'' (dall'inglese Refree). Le query che vengono eseguite sono tre perché \emph{ARBITRO} è una specializzazione dell'entità \emph{REGISTRATO} che a sua volta è una specializzazione dell'entità \emph{UTENTE}.
+
+\subsubsection*{Inserimento utente}
 
 \begin{lstlisting}
-UPDATE arbitro
-SET 
-Foto='Conversion.getDatabaseString(foto)', data_n='Conversion.getDatabaseString(data_n)',
-Nazionalita='Conversion.getDatabaseString(nazionalita)', Carriera='Conversion.getDatabaseString(carriera)'
-WHERE SSN=(SELECT SSN FROM utente WHERE email='"+Conversion.getDatabaseString(email)')
+INSERT INTO utente (ID_Utente, Nome, Cognome, Password, Email, Tipo,
+                    Attivo)
+VALUES (id,
+        'Conversion.getDatabaseString(nome)',
+        'Conversion.getDatabaseString(cognome)',
+        'Conversion.getDatabaseString(password)',
+        'Conversion.getDatabaseString(email)',
+        'R',
+        'Y');
 \end{lstlisting}
 
-\subsection*{Eliminazione di un utente dall'applicazione}
-L'amministratore ha la possibilità di togliere i privilegi di accesso all'applicazione ad un utente registrato. In realtà non viene eliminato dal database ma viene solo cambiata la sua visibilità attraverso l'attributo \emph{Attivo}.
+\newpage
+
+\subsubsection*{Inserimento registrato}
 
 \begin{lstlisting}
-UPDATE utente
-SET flag='N' 
-WHERE  email='Conversion.getDatabaseString(email)'
+INSERT INTO registrato (ID_Utente, Telefono, Indirizzo,
+                        ID_Amministratore)
+VALUES (id,
+        'Conversion.getDatabaseString(telefono)',
+        'Conversion.getDatabaseString(indirizzo)',
+        'Conversion.getDatabaseString(Admin)');
 \end{lstlisting}
 
+\subsubsection*{Aggiornamento di un arbitro}
+
+\begin{lstlisting}
+INSERT INTO arbitro (ID_Registrato, Foto, Data_nascita, Nazionalita,
+                     Carriera)
+VALUES (id,
+        'Conversion.getDatabaseString(foto)',
+        'Conversion.getDatabaseString(dataNascita)',
+        'Conversion.getDatabaseString(nazionalita)',
+        'Conversion.getDatabaseString(carriera)');
+\end{lstlisting}
 
 \subsection*{Inserimento dei marcatori di una partita}
-Nella creazione del referto viene utilizzata questa query per inserire in una tabella tutti i giocatori che hanno segnato dei goal nella partita a cui fa riferimento il referto. Una cosa simile è stata fatta per la cartella Cartellini.
+Nella creazione del referto viene utilizzata la query seguente per inserire nella tabella \emph{MARCATORE} tutti i giocatori che hanno segnato dei goal nella partita a cui fa riferimento il referto.
 
 \begin{lstlisting}
-INSERT INTO marcatori (ID_Referto, SSN_Giocatore, Goal) 
-VALUES ('Conversion.getDatabaseString(""+IDReferto)', 'Conversion.getDatabaseString(""+SSNGiocatore)', 'Conversion.getDatabaseString(""+goal)')
+INSERT INTO marcatore (ID_Referto, ID_Giocatore, Goal)
+VALUES (IDReferto, IDGiocatore, goal);
 \end{lstlisting}
 
 \subsection{UPDATE}
 
 \subsection*{Primo accesso all'applicazione del gestore di una squadra}
-Primo accesso all'applicazione del gestore di una squadra
+Quando il gestore di una squadra, dopo essere stato inserito nel sistema dall'amministratore, effettua il primo accesso all'applicazione deve compilare i dati della sua squadra. L'aggiornamento con i nuovi dati inseriti avviene eseguendo il codice seguente:
 
 \begin{lstlisting}
 UPDATE squadra
-SET    Nome_squadra = 'Conversion.getDatabaseString(nomeSquadra)',
-Logo_squadra = Conversion.getDatabaseString(logoSquadra),
-Immagine_squadra = 'Conversion.getDatabaseString(immagine Squadra)',
-Nome_sponsor = 'Conversion.getDatabaseString(nomeSponsor)',
-Logo_sponsor = 'Conversion.getDatabaseString(logoSponsor)',
-Sede = 'Conversion.getDatabaseString(sede)',
-Descrizione = 'Conversion.getDatabaseString(descrizione)',
-flag = 'Y'
-WHERE  SSN_Gestore = 'Conversion.getDatabaseString(""+gestore)'
+SET Nome_squadra = 'Conversion.getDatabaseString(nomeSquadra)',
+    Logo_squadra = 'Conversion.getDatabaseString(logoSquadra)',    
+    Immagine_squadra = 'Conversion.getDatabaseString(immagineSquadra)',
+    Nome_sponsor = 'Conversion.getDatabaseString(nomeSponsor)',
+    Logo_sponsor = 'Conversion.getDatabaseString(logoSponsor)',
+    Sede = 'Conversion.getDatabaseString(sede)',
+    Descrizione = 'Conversion.getDatabaseString(descrizione)',
+    Compilata = 'Y'
+WHERE ID_Gestore = gestore;
 \end{lstlisting}
 
-\subsection*{Inserimento di un nuovo arbitro}
-L'amministratore ha la possibilità di inserire un nuovo arbitro, a esso gli viene attribuita la lettera ``R'' (dall'inglese Refree) nell'attributo \emph{Tipo}. Le query sono tre perchè l'arbitro è un registrato che a sua volta è un cliente.
-
-\subsubsection*{Inserimento utente}
+\subsection*{Eliminazione di un utente dall'applicazione}
+L'amministratore ha la possibilità di rimuovere i privilegi di accesso all'applicazione ad un utente registrato da lui creato in precedenza. La cancellazione che viene effettuata è una cancellazione logica in quanto viene cambiata la visibilità dell'utente attraverso l'attributo \emph{Attivo}.
+La query che effettua la cancellazione logica è la seguente:
 
 \begin{lstlisting}
 UPDATE utente
-SET 
-flag='Y', type='R', Nome='Conversion.getDatabaseString(nome)', Cognome='Conversion.getDatabaseString(cognome)',
-Password='Conversion.getDatabaseString(password)'
-WHERE email='Conversion.getDatabaseString(email)'
+SET Attivo = 'N'
+WHERE Email = 'Conversion.getDatabaseString(email)';
 \end{lstlisting}
 
-\subsubsection*{Inserimento registrato}
-
-\begin{lstlisting}
-UPDATE registrato
-SET 
-Telefono='Conversion.getDatabaseString(telefono)', Indirizzo='Conversion.getDatabaseString(indirizzo)',
-SSN_Admin='Conversion.getDatabaseString(""+Admin)'
-WHERE SSN=(SELECT SSN              FROM utente             WHERE email='Conversion.getDatabaseString(email)')
-\end{lstlisting}
+\newpage
 
 \subsection{SELECT}
 
-\subsection*{Ricerca partite senza nessun arbitro}
+\subsection*{Ricerca formazioni non ancora compilate per un gestore}
+Quando l'amministratore del sistema assegna un arbitro ad una partita di un torneo, il gestore della squadra deve compilare la formazione per la partita. La query seguente viene eseguita quando il gestore della pagina visualizza le partite per cui deve ancora compilare una formazione:
 
 \begin{lstlisting}
-SELECT p.Data_partita, R.ID_Referto,g., r.flagRef, t.Nome AS nomeTorneo
-FROM referto AS r, giocano AS g, torneo AS t, partita AS p
-WHERE 	r.flagRef='N' AND
-G.ID_Partita=r.ID_Partita AND
-g.ID_Torneo=t.ID_Torneo AND
-r.ID_Partita=p.ID_Partita AND
-g.ID_Partita=p.ID_Partita AND
-(G.ID_SquadraA IN
-(SELECT ID_SQUADRA
-FROM SQUADRA 
-WHERE ssn_gESTORE='"+Conversion.getDatabaseString(""+gestore)  AND
-ID_Squadra<>'0')
-OR G.ID_SquadraB IN
-(SELECT ID_SQUADRA
-FROM SQUADRA
-WHERE ssn_gESTORE='"+Conversion.getDatabaseString(""+gestore) AND
-ID_Squadra<>'0')) 
-AND R.ID_Referto NOT IN
-(SELECT ID_Referto
-FROM formazione 
-WHERE ID_Squadra=(SELECT ID_Squadra
-FROM squadra
-WHERE SSN_Gestore='"+Conversion.getDatabaseString(""+gestore)))
-ORDER BY ID_Referto
+SELECT P.Data_partita, R.ID_Referto, G.*, R.Compilato,
+       T.Nome AS nomeTorneo
+FROM referto AS R, giocano AS G, torneo AS T, partita AS P
+WHERE R.Compilato='N' AND G.ID_Partita = R.ID_Partita AND
+      G.ID_Torneo = T.ID_Torneo AND R.ID_Partita = P.ID_Partita AND
+      G.ID_Partita = P.ID_Partita AND 
+      (G.ID_SquadraA IN (SELECT ID_SQUADRA
+                         FROM squadra
+                         WHERE ID_Gestore = gestore AND
+                         ID_Squadra <> 0) OR
+       G.ID_SquadraB IN (SELECT ID_SQUADRA FROM squadra
+                         WHERE ID_Gestore = gestore AND
+                         ID_Squadra <> 0)) AND
+      R.ID_Referto NOT IN (SELECT ID_Referto
+                           FROM formazione
+                           WHERE ID_Squadra = (SELECT ID_Squadra
+                                               FROM squadra
+                                               WHERE ID_Gestore =
+                                               gestore ) )
+ORDER BY ID_Referto;
 \end{lstlisting}
 
-\subsection*{Ricerca dei referti assegnati ad un arbitro da un amministratore}
-Quando l'amministratore del sistema deve sorteggiare un arbitro per una determinata partita riguardante una certa fase di un determinato torneo, deve poter visualizzare soltanto gli incontri per cui il sorteggio non sia già stato effettuato.
+\subsection*{Visualizzazione dei referti assegnati ad un arbitro da un amministratore}
+Quando l'amministratore del sistema deve sorteggiare un arbitro per una determinata partita riguardante una certa fase di un determinato torneo, deve poter visualizzare soltanto gli incontri per cui il sorteggio non sia già stato effettuato. La query seguente visualizza la lista di tutte le partite assegnate ad un arbitro dall'amministratore:
 
 \begin{lstlisting}
-SELECT 	Ref.ID_Referto, Ref.Risultato, Ref.Ora_inizio,
-Ref.Ora_fine, Ref.ID_Partita, Ref.Risultato,
-Ref.flagRef,U.Nome AS nomeArbitro,
-U.cognome AS cognomeArbitro,T.ID_Torneo,
-T.tipologia as tipoTorneo, T.Nome as nomeTorneo,
-P.Data_Partita, P.Luogo
-FROM 	referto AS Ref, utente AS U, registrato AS Reg,
-giocano as G, torneo as T, partita as P
-WHERE	U.Flag='Y' AND U.type='R' AND
-U.SSN=Reg.SSN AND U.SSN=Ref.SSN_Arbitro
-AND g.id_partita=Ref.ID_Partita
-AND t.ID_Torneo=G.ID_Torneo
-AND p.ID_Partita=G.ID_Partita
-AND Reg.SSN_Admin='"+Conversion.getDatabaseString(""+Admin)'
-ORDER BY Ref.ID_Referto 
+SELECT REF.ID_Referto, REF.Risultato, REF.Ora_inizio, REF.Ora_fine,
+       REF.ID_Partita, REF.Risultato, REF.Compilato,
+       U.Nome AS nomeArbitro, U.Cognome AS CognomeArbitro,
+       T.ID_Torneo, T.Tipologia as TipoTorneo,
+       T.Nome as NomeTorneo, P.Data_Partita, P.Luogo
+FROM referto AS REF, utente AS U, registrato AS REG, giocano AS G,
+     torneo AS T, partita AS P
+WHERE U.Attivo = 'Y' AND U.Tipo = 'R' AND
+      U.ID_Utente = REG.ID_Utente AND U.ID_Utente = REF.ID_Arbitro AND
+      G.ID_partita = REF.ID_Partita AND T.ID_Torneo = G.ID_Torneo AND
+      P.ID_Partita = G.ID_Partita AND REG.ID_Amministratore = admin
+ORDER BY REF.ID_Referto
 \end{lstlisting}
 
-\subsection*{Estrazione dei cartellini dei giocatori in una determinata partita}
-Questa query viene utilizzata dall'utente pubblico quando va a visionare il referto relativo ad una determinata partita. Vengono estratte dalla tabella i cartellini di tutti i giocatori e le espulsioni e le ammonizioni relative ad una determinata partita. GLi \emph{Id} dei giocatori verranno poi confrontati con gli \emph{Id} dei giocatori delle due formazioni e se risultano uguali allora estraggo il flag ammonito/espulso e li visualizzo a schermo. Una query simile è stata fatta per la cartella Marcatori.
+\subsection*{Visualizzazione dei cartellini dei giocatori in un referto di una partita}
+Quando l'utente pubblico va a visionare il referto relativo di una determinata partita, vengono estratte dalla tabella \emph{CARTELLINO} le ammonizioni e le espulsioni di tutti i giocatori per la partita selezionata. La query seguente visualizza i cartellini per ogni giocatore presente in un referto:
 
 \begin{lstlisting}
-SELECT g.Nome, g.Cognome, g.Foto, g.Foto, g.SSN_Gct, G.ID_Squadra, c.Flag_Ammonito as FlagAmmonito, c.Flag_Espulso as FlagEspulso
-FROM giocatore AS g, cartellini_gialli AS C
-WHERE C.SSN_Giocatore=G.SSN_Gct  AND C.ID_Referto='Conversion.getDatabaseString(""+IDReferto)'
-AND (G.ID_Squadra='Conversion.getDatabaseString(""+IDSquadraA)' OR G.ID_Squadra='Conversion.getDatabaseString(""+IDSquadraB)')
+SELECT G.Nome, G.Cognome, G.Foto, G.ID_Giocatore, G.ID_Squadra,
+       C.Ammonizione AS FlagAmmonito, C.Espulsione AS FlagEspulso
+FROM giocatore AS G, cartellino AS C
+WHERE C.ID_Giocatore = G.ID_Giocatore AND
+      C.ID_Referto = IDReferto AND (G.ID_Squadra = IDSquadraA OR
+                                    G.ID_Squadra = IDSquadraB);
 \end{lstlisting}
