@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.6}Torneo}{6}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.7}Partita}{6}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.7}Partita}{7}{subsection.2.1.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.8}Referto}{7}{subsection.2.1.8}
 \defcounter {refsection}{0}\relax 
@@ -38,9 +38,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.11}Giocatore}{10}{subsection.2.1.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Descrizione delle associazioni}{11}{section.2.2}
+\contentsline {section}{\numberline {2.2}Descrizione delle associazioni}{12}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Ha}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Ha}{12}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Presente}{12}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.5}Riferito}{12}{subsection.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}Gestisce Registrato}{12}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.6}Gestisce Registrato}{13}{subsection.2.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.7}Gestisce Torneo}{13}{subsection.2.2.7}
 \defcounter {refsection}{0}\relax 
@@ -60,7 +60,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.10}Cartellino}{13}{subsection.2.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.11}Marcatore}{13}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.11}Marcatore}{14}{subsection.2.2.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.12}Scelto}{14}{subsection.2.2.12}
 \defcounter {refsection}{0}\relax 
@@ -68,7 +68,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.14}Giocano}{14}{subsection.2.2.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Il modello E-R completo}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Il modello E-R completo}{15}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello relazionale}}{16}{chapter.3}
 \defcounter {refsection}{0}\relax 
