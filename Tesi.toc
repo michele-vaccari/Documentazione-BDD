@@ -58,7 +58,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.9}Partecipa}{13}{subsection.2.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.10}Cartellino}{13}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.10}Cartellino}{14}{subsection.2.2.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.11}Marcatore}{14}{subsection.2.2.11}
 \defcounter {refsection}{0}\relax 
@@ -66,84 +66,84 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.13}Formazione}{14}{subsection.2.2.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.14}Giocano}{14}{subsection.2.2.14}
+\contentsline {subsection}{\numberline {2.2.14}Giocano}{15}{subsection.2.2.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Il modello E-R completo}{15}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello relazionale}}{16}{chapter.3}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Modello relazionale}}{17}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}L'algoritmo di traduzione}{16}{section.3.1}
+\contentsline {section}{\numberline {3.1}L'algoritmo di traduzione}{17}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Traduzione di entit\IeC {\`a}}{16}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Traduzione di entit\IeC {\`a}}{17}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Traduzione della specializzazione}{16}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Traduzione della specializzazione}{17}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Traduzione di entit\IeC {\`a} deboli}{16}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Traduzione di entit\IeC {\`a} deboli}{17}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Traduzione di associazioni binarie 1:1}{17}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Traduzione di associazioni binarie 1:1}{18}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Traduzione di associazioni binarie 1:N}{17}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.5}Traduzione di associazioni binarie 1:N}{18}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Traduzione di associazioni binarie N:M}{17}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.6}Traduzione di associazioni binarie N:M}{18}{subsection.3.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.7}Traduzione di associazioni N-arie}{17}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.7}Traduzione di associazioni N-arie}{18}{subsection.3.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Applicazione dell'algoritmo di traduzione}{18}{section.3.2}
+\contentsline {section}{\numberline {3.2}Applicazione dell'algoritmo di traduzione}{19}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Normalizzazione}}{22}{chapter.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Normalizzazione}}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Cenni teorici}{22}{section.4.1}
+\contentsline {section}{\numberline {4.1}Cenni teorici}{23}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Prima forma normale (1NF)}{22}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Prima forma normale (1NF)}{23}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Seconda forma normale (2NF)}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Seconda forma normale (2NF)}{23}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Terza forma normale (3NF)}{22}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.3}Terza forma normale (3NF)}{23}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Processo di normalizzazione}{23}{section.4.2}
+\contentsline {section}{\numberline {4.2}Processo di normalizzazione}{24}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Codice SQL}}{25}{chapter.5}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Codice SQL}}{26}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}DDL}{25}{section.5.1}
+\contentsline {section}{\numberline {5.1}DDL}{26}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Utente}{25}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Utente}{26}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Amministratore}{25}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Amministratore}{26}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Registrato}{26}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Registrato}{27}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Arbitro}{26}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Arbitro}{27}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Gestore Squadra}{26}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.5}Gestore Squadra}{27}{subsection.5.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Torneo}{27}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.6}Torneo}{28}{subsection.5.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.7}Partita}{27}{subsection.5.1.7}
+\contentsline {subsection}{\numberline {5.1.7}Partita}{28}{subsection.5.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.8}Referto}{27}{subsection.5.1.8}
+\contentsline {subsection}{\numberline {5.1.8}Referto}{28}{subsection.5.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.9}Squadra}{28}{subsection.5.1.9}
+\contentsline {subsection}{\numberline {5.1.9}Squadra}{29}{subsection.5.1.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.10}Classifica}{28}{subsection.5.1.10}
+\contentsline {subsection}{\numberline {5.1.10}Classifica}{29}{subsection.5.1.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.11}Giocatore}{29}{subsection.5.1.11}
+\contentsline {subsection}{\numberline {5.1.11}Giocatore}{30}{subsection.5.1.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.12}Marcatore}{29}{subsection.5.1.12}
+\contentsline {subsection}{\numberline {5.1.12}Marcatore}{30}{subsection.5.1.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.13}Partecipano}{29}{subsection.5.1.13}
+\contentsline {subsection}{\numberline {5.1.13}Partecipano}{30}{subsection.5.1.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.14}Cartellino}{30}{subsection.5.1.14}
+\contentsline {subsection}{\numberline {5.1.14}Cartellino}{31}{subsection.5.1.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.15}Scelto}{30}{subsection.5.1.15}
+\contentsline {subsection}{\numberline {5.1.15}Scelto}{31}{subsection.5.1.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.16}Formazione}{30}{subsection.5.1.16}
+\contentsline {subsection}{\numberline {5.1.16}Formazione}{31}{subsection.5.1.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.17}Giocano}{31}{subsection.5.1.17}
+\contentsline {subsection}{\numberline {5.1.17}Giocano}{32}{subsection.5.1.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Interrogazioni}{31}{section.5.2}
+\contentsline {section}{\numberline {5.2}Interrogazioni}{32}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}INSERT}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}INSERT}{32}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}UPDATE}{32}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}UPDATE}{33}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}SELECT}{34}{subsection.5.2.3}

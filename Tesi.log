@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  9 OCT 2017 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.16)  10 OCT 2017 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1691,6 +1691,18 @@ i-ca uni-vo-ca-men-te un uten-
 [3
 
  <./immagini/01-utente.pdf>]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 66.
+
+(d:/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 66.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 <immagini/02-amministratore.pdf, id=530, 160.6pt x 71.26625pt>
 File: immagini/02-amministratore.pdf Graphic file (type pdf)
 
@@ -1704,30 +1716,33 @@ File: immagini/03-registrato.pdf Graphic file (type pdf)
 <use immagini/03-registrato.pdf>
 Package pdftex.def Info: immagini/03-registrato.pdf used on input line 91.
 (pdftex.def)             Requested size: 222.00226pt x 45.03606pt.
- [4 <./immagini/02-amministratore.pdf> <./immagini/03-registrato.pdf>]
-<immagini/04-arbitro.pdf, id=562, 355.3275pt x 208.78pt>
+ [4 <./immagini/02-amministratore.pdf> <./immagini/03-registrato.pdf>] <immagin
+i/04-arbitro.pdf, id=563, 345.29pt x 208.78pt>
 File: immagini/04-arbitro.pdf Graphic file (type pdf)
 
 <use immagini/04-arbitro.pdf>
 Package pdftex.def Info: immagini/04-arbitro.pdf used on input line 121.
-(pdftex.def)             Requested size: 222.00226pt x 130.44574pt.
+(pdftex.def)             Requested size: 222.00226pt x 134.23676pt.
 
-<immagini/05-gestore-squadra.pdf, id=564, 171.64125pt x 71.26625pt>
+<immagini/05-gestore-squadra.pdf, id=565, 171.64125pt x 71.26625pt>
 File: immagini/05-gestore-squadra.pdf Graphic file (type pdf)
 
 <use immagini/05-gestore-squadra.pdf>
 Package pdftex.def Info: immagini/05-gestore-squadra.pdf used on input line 157
 .
 (pdftex.def)             Requested size: 111.00113pt x 46.0876pt.
- [5 <./immagini/04-arbitro.pdf> <./immagini/05-gestore-squadra.pdf>]
-<immagini/06-torneo.pdf, id=604, 271.0125pt x 211.79124pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<immagini/06-torneo.pdf, id=567, 271.0125pt x 211.79124pt>
 File: immagini/06-torneo.pdf Graphic file (type pdf)
 
 <use immagini/06-torneo.pdf>
 Package pdftex.def Info: immagini/06-torneo.pdf used on input line 172.
 (pdftex.def)             Requested size: 185.0pt x 144.57845pt.
-
-<immagini/07-partita.pdf, id=606, 261.97874pt x 210.7875pt>
+ [5 <./immagini/04-arbitro.pdf>]
+<immagini/07-partita.pdf, id=600, 261.97874pt x 210.7875pt>
 File: immagini/07-partita.pdf Graphic file (type pdf)
 
 <use immagini/07-partita.pdf>
@@ -1737,8 +1752,8 @@ Package pdftex.def Info: immagini/07-partita.pdf used on input line 214.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./immagini/06-torneo.pdf>]
-<immagini/08-referto.pdf, id=640, 281.05pt x 210.7875pt>
+[6 <./immagini/05-gestore-squadra.pdf> <./immagini/06-torneo.pdf>]
+<immagini/08-referto.pdf, id=641, 281.05pt x 210.7875pt>
 File: immagini/08-referto.pdf Graphic file (type pdf)
 
 <use immagini/08-referto.pdf>
@@ -1749,14 +1764,14 @@ Package pdftex.def Info: immagini/08-referto.pdf used on input line 260.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./immagini/07-partita.pdf>]
-<immagini/09-squadra.pdf, id=678, 337.26pt x 225.84375pt>
+<immagini/09-squadra.pdf, id=679, 337.26pt x 225.84375pt>
 File: immagini/09-squadra.pdf Graphic file (type pdf)
 
 <use immagini/09-squadra.pdf>
 Package pdftex.def Info: immagini/09-squadra.pdf used on input line 299.
 (pdftex.def)             Requested size: 222.00226pt x 148.66447pt.
  [8 <./immagini/08-referto.pdf> <./immagini/09-squadra.pdf>] <immagini/10-class
-ifica.pdf, id=768, 317.185pt x 213.79875pt>
+ifica.pdf, id=769, 317.185pt x 213.79875pt>
 File: immagini/10-classifica.pdf Graphic file (type pdf)
 
 <use immagini/10-classifica.pdf>
@@ -1766,7 +1781,7 @@ Package pdftex.def Info: immagini/10-classifica.pdf used on input line 350.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] <immagini/11-giocatore.pdf, id=775, 402.50375pt x 237.88875pt>
+[9] <immagini/11-giocatore.pdf, id=776, 402.50375pt x 237.88875pt>
 File: immagini/11-giocatore.pdf Graphic file (type pdf)
 
 <use immagini/11-giocatore.pdf>
@@ -1777,26 +1792,30 @@ Package pdftex.def Info: immagini/11-giocatore.pdf used on input line 395.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <./immagini/10-classifica.pdf>] [11 <./immagini/11-giocatore.pdf>] [12]
-[13] <immagini/diagramma-ER-completo.pdf, id=911, 1897.0875pt x 1172.38pt>
+[13] [14]
+<immagini/diagramma-ER-completo.pdf, id=916, 1897.0875pt x 1172.38pt>
 File: immagini/diagramma-ER-completo.pdf Graphic file (type pdf)
 
 <use immagini/diagramma-ER-completo.pdf>
 Package pdftex.def Info: immagini/diagramma-ER-completo.pdf used on input line 
-542.
-(pdftex.def)             Requested size: 496.90741pt x 307.10068pt.
- [14]) (./capitoli/capitolo-3.tex
-[15 <./immagini/diagramma-ER-completo.pdf>]
-chapter 3.
-[16
+543.
+(pdftex.def)             Requested size: 598.71468pt x 370.0pt.
 
-] <immagini/traduzione-entita.pdf, id=1382, 884.30376pt x 391.4625pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./capitoli/capitolo-3.tex [15] [16 <./immagini/diagramma-ER-completo.pdf>]
+chapter 3.
+[17
+
+] <immagini/traduzione-entita.pdf, id=1387, 884.30376pt x 391.4625pt>
 File: immagini/traduzione-entita.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita.pdf>
 Package pdftex.def Info: immagini/traduzione-entita.pdf used on input line 68.
 (pdftex.def)             Requested size: 314.50226pt x 139.22401pt.
- [17]
-<immagini/traduzione-entita-specializzate.pdf, id=1387, 906.38625pt x 632.3625p
+ [18]
+<immagini/traduzione-entita-specializzate.pdf, id=1392, 906.38625pt x 632.3625p
 t>
 File: immagini/traduzione-entita-specializzate.pdf Graphic file (type pdf)
  <use immagini/traduzione-entita-specializzate.pdf>
@@ -1804,7 +1823,7 @@ Package pdftex.def Info: immagini/traduzione-entita-specializzate.pdf used on i
 nput line 76.
 (pdftex.def)             Requested size: 351.49887pt x 245.23091pt.
 
-<immagini/traduzione-entita-deboli.pdf, id=1388, 906.38625pt x 692.5875pt>
+<immagini/traduzione-entita-deboli.pdf, id=1393, 906.38625pt x 692.5875pt>
 File: immagini/traduzione-entita-deboli.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-entita-deboli.pdf>
@@ -1815,7 +1834,7 @@ ne 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-1.pdf, id=1389, 906.38625pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-1.pdf, id=1394, 906.38625pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-1.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-1.pdf>
@@ -1826,7 +1845,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-1.pdf used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/traduzione-associazioni-1-N.pdf, id=1390, 955.57pt x 692.5875pt>
+<immagini/traduzione-associazioni-1-N.pdf, id=1395, 955.57pt x 692.5875pt>
 File: immagini/traduzione-associazioni-1-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-1-N.pdf>
@@ -1838,7 +1857,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-1-N.pdf used on input
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-M-N.pdf, id=1391, 998.73125pt x 874.26625pt>
+<immagini/traduzione-associazioni-M-N.pdf, id=1396, 998.73125pt x 874.26625pt>
 File: immagini/traduzione-associazioni-M-N.pdf Graphic file (type pdf)
 
 <use immagini/traduzione-associazioni-M-N.pdf>
@@ -1850,7 +1869,7 @@ Package pdftex.def Info: immagini/traduzione-associazioni-M-N.pdf used on input
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<immagini/traduzione-associazioni-ternarie.pdf, id=1392, 1039.885pt x 1053.9375
+<immagini/traduzione-associazioni-ternarie.pdf, id=1397, 1039.885pt x 1053.9375
 pt>
 File: immagini/traduzione-associazioni-ternarie.pdf Graphic file (type pdf)
  <use immagini/traduzione-associazioni-ternarie.pdf>
@@ -1861,89 +1880,71 @@ input line 116.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./capitoli/capitolo-4.tex [18 <./immagini/traduzione-entita.pdf> <./immagini
-/traduzione-entita-specializzate.pdf>] [19 <./immagini/traduzione-entita-deboli
-.pdf> <./immagini/traduzione-associazioni-1-1.pdf>] [20 <./immagini/traduzione-
-associazioni-1-N.pdf> <./immagini/traduzione-associazioni-M-N.pdf>] [21 <./imma
+) (./capitoli/capitolo-4.tex [19 <./immagini/traduzione-entita.pdf> <./immagini
+/traduzione-entita-specializzate.pdf>] [20 <./immagini/traduzione-entita-deboli
+.pdf> <./immagini/traduzione-associazioni-1-1.pdf>] [21 <./immagini/traduzione-
+associazioni-1-N.pdf> <./immagini/traduzione-associazioni-M-N.pdf>] [22 <./imma
 gini/traduzione-associazioni-ternarie.pdf>]
 chapter 4.
-[22
+[23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
+Underfull \hbox (badness 10000) in paragraph at lines 48--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 48--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--81
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--99
-
- []
-
-[23]
-
-LaTeX Warning: Hyper reference `f:trad-assoc-m-n' on page 24 undefined on input
- line 118.
-
-
-LaTeX Warning: Reference `f:trad-assoc-m-n' on page 24 undefined on input line 
-118.
 
 ) (./capitoli/capitolo-5.tex
-Underfull \hbox (badness 10000) in paragraph at lines 114--5
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--5
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
 
  []
 
-[24]
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--5
+
+ []
+
+[24] [25]
 chapter 5.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 17.
-(d:/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 17.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [25
+[26
 
-] [26] [27] [28]
-[29] [30] [31] [32] [33] [34])
+] [27] [28] [29] [30] [31] [32] [33] [34])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
  [35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
@@ -1952,22 +1953,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: B69D67FA3F8923CF5B5169A2FBA68212;5199.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'Tesi.run.xml'.
 \openout1 = `Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  25380 strings out of 492995
- 442996 string characters out of 6136402
- 1318410 words of memory out of 5000000
- 28025 multiletter control sequences out of 15000+600000
- 81320 words of font info for 81 fonts, out of 8000000 for 9000
+ 443023 string characters out of 6136402
+ 1302410 words of memory out of 5000000
+ 28027 multiletter control sequences out of 15000+600000
+ 80484 words of font info for 80 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 69i,23n,92p,8817b,2171s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,23n,92p,8817b,3554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{d:/texlive/2017/texm
 f-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{d:/texlive/2017/texmf-dist/fonts/enc
 /dvips/iwona/ec-iwona-sc.enc}<d:/texlive/2017/texmf-dist/fonts/type1/public/ams
@@ -1981,13 +1978,12 @@ s/type1/public/bera/fvmr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/
 iwona/iwonab.pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.
 pfb><d:/texlive/2017/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb><d:/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><d:/texlive
-/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2017/texmf-dis
-t/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on Tesi.pdf (39 pages, 2055367 bytes).
+/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2017/texmf-dis
+t/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Tesi.pdf (39 pages, 2045041 bytes).
 PDF statistics:
- 2369 PDF objects out of 2487 (max. 8388607)
- 1959 compressed objects within 20 object streams
+ 2366 PDF objects out of 2487 (max. 8388607)
+ 1957 compressed objects within 20 object streams
  427 named destinations out of 1000 (max. 500000)
- 15021 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 15533 words of extra memory for PDF output out of 17280 (max. 10000000)
 

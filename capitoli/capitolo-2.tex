@@ -32,7 +32,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\begin{description}
 			
 			\item[Id]
-			Chiave primaria dell'entità ``Utente'' che identifica univocamente un utente. Il valore di tale attributo viene inserito dal sistema.
+			Chiave primaria dell'entità ``Utente'' che identifica univocamente un utente. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Email]
 			Identifica l'email utilizzata dall'utente in fase di autenticazione. Il valore di tale attributo viene inserito dall'utente con relativo controllo di omonimie.
@@ -63,7 +63,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 		
 		\subsubsection*{Caso Particolare}
 		Esiste sempre un valore particolare, ovvero ``admin'', che rappresenta sempre il primo utente Amministratore. Tale valore è sempre presente all'interno della tabella.
@@ -111,7 +111,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 	
 	\subsection{Arbitro}
 		
@@ -132,7 +132,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		
 		\begin{description}
 			
-			\item[Data di nascita]
+			\item[Data nascita]
 			Identifica la data di nascita dell'utente.
 			
 			\item[Nazionalita]
@@ -147,7 +147,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 	
 	\subsection{Gestore Squadra}
 	
@@ -196,7 +196,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 			\end{itemize}
 			
 			\item[Nome]
-			Identifica la nazionalità dell'utente con un massimo di 30 caratteri.
+			Identifica il nome del torneo con un massimo di 30 caratteri.
 			
 			\item[Descrizione]
 			Campo utilizzato dall'amministratore per inserire delle informazioni aggiuntive relative al torneo (storia, luogo, sponsor, ecc.).
@@ -204,7 +204,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Ad eccezione del campo ``Descrizione'', nessuno di questi attributi può assumere il valore NULL.
+		Ad eccezione del campo ``Descrizione'', nessuno di questi attributi può assumere il valore \texttt{NULL}.
 	
 	\subsection{Partita}
 		
@@ -250,7 +250,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 	
 	\subsection{Referto}
 		
@@ -289,7 +289,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Ad eccezione degli attributi \emph{Ora inizio}, \emph{Ora fine} e \emph{Risultato} tutti gli altri attributi non possono assumere il valore NULL.
+		Ad eccezione degli attributi \emph{Ora inizio}, \emph{Ora fine} e \emph{Risultato} tutti gli altri attributi non possono assumere il valore \texttt{NULL}.
 	
 	\subsection{Squadra}
 	
@@ -340,7 +340,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Ad eccezione degli attributi \emph{Id}, \emph{Compilata} e \emph{Nome} tutti gli altri attributi possono assumere il valore \texttt{NULL}.
 	
 	\subsection{Classifica}
 	
@@ -385,7 +385,7 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 		
 	\subsection{Giocatore}
 	
@@ -407,10 +407,10 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\begin{description}
 			
 			\item[Id]
-			Chiave parziale dell'entità ``Giocatore'' che identifica univocamente un giocatore appartenente ad una determinata squadra. Il valore di tale attributo viene assegnato automaticamente dal sistema.
+			Chiave primaria dell'entità ``Giocatore'' che identifica univocamente un giocatore. Il valore di tale attributo viene assegnato automaticamente dal sistema.
 			
 			\item[Attivo]
-			Identifica lo stato del giocatore, ovvero se è attivo oppure no. Può assumere due valori di tipo booleano (true o false); di default assume valore true (attivo).
+			Identifica lo stato del giocatore, ovvero se è attivo oppure no. Può assumere i valori: ``Y'' oppure ``N''; di default assume valore ``Y'' (attivo).
 			
 			\item[Numero maglia]
 			Identifica il numero maglia con cui il giocatore prende parte alle partite.
@@ -448,87 +448,88 @@ Una volta analizzate le specifiche del progetto per il quale si vuole realizzare
 		\end{description}
 		
 		\subsubsection*{N.B.}
-		Nessuno di questi attributi può assumere il valore NULL.
+		Nessuno di questi attributi può assumere il valore \texttt{NULL}.
 
 \section{Descrizione delle associazioni}
 	
 	\subsection{Ha}
-	Associazione presente tra Torneo e Classifica.
-	L’entità classifica è debole per questo è all'interno di un doppio rettangolo; anche il rombo è doppio per lo stesso motivo. 
+	Associazione presente tra Torneo e Classifica. \\
+	L’entità classifica è debole e, per questo motivo, viene rappresentata all'interno di un doppio rettangolo; anche il rombo che rappresenta l'associazione è doppio per lo stesso motivo. 
 	Un entità è debole se non ha attributi chiave; tali entità hanno sempre un vincolo di partecipazione totale perché altrimenti non sarebbero identificabili. Come si può notare è presente un vincolo di partecipazione totale dalla parte di classifica.
 	La molteplicità è $1:N$ in quanto ad un torneo sono associate più classifiche (una per ogni squadra), ma una classifica può essere associata soltanto ad un singolo torneo.
 	
 	\subsection{Presente}
-	Associazione presente tra Squadra e Classifica;
+	Associazione presente tra Squadra e Classifica. \\
 	Valgono le stesse considerazioni fatte per la relazione ``Ha''.
 	La molteplicità è $1:N$ in quanto ad una squadra possono essere associate più classifiche (una per ogni torneo a cui la squadra partecipa), ma una classifica può essere associata soltanto ad una squadra.
 	
 	\subsection{Composta}
-	Associazione presente tra Squadra e Giocatore.
-	Indica quali sono i giocatori che compongono una determinata squadra. In una squadra possono prendere parte al massimo $36$ giocatori. I giocatori possono far parte di una sola squadra. Come si può vedere la molteplicità è $1: 36$.
+	Associazione presente tra Squadra e Giocatore. \\
+	Indica quali sono i giocatori che compongono una determinata squadra. In una squadra possono prendere parte al massimo $36$ giocatori. Un giocatore può far parte di una sola squadra. La molteplicità è $1: 36$.
 	I $36$ giocatori sono la rosa della squadra.
 	
 	\subsection{Gestisce}
-	Associazione presente tra Gestore Squadra e Squadra.
-	Utile per sapere da chi è gestita una determinata squadra; è presente un vincolo di partecipazione totale dalla parte di squadra in quanto non può esistere una squadra se non esiste un gestore che la crea.
+	Associazione presente tra Gestore Squadra e Squadra. \\
+	Identifica chi è il gestore di una determinata squadra. È presente un vincolo di partecipazione totale dalla parte di squadra in quanto non può esistere una squadra se non esiste un gestore che la crea.
 	La molteplicità è $1:1$ in quanto una squadra può essere gestita da un solo gestore e viceversa.
 	
 	\subsection{Riferito}
-	Associazione presente tra Partita e Referto.
+	Associazione presente tra Partita e Referto. \\
 	Serve per associare un referto ad una determinata partita che, deve essere o è già stata, giocata.
 	È presente un vincolo di partecipazione totale dalla parte di referto in quanto non esiste un referto se non esiste una partita. 
 	La molteplicità è $1:1$ poiché ad una determinata partita è associato un solo referto e viceversa.
 	
 	\subsection{Gestisce Registrato}
-	Associazione presente tra Registrato e Amministratore.
-	I Registrati del sistema (Arbitri e Gestori squadra) devo essere, creati da uno degli amministratori. Per questo motivo è presente un vincolo di partecipazione totale dalla parte di Registrato. Un Registrato non può esistere se non è presente un Amministratore che lo abbia creato.
-	La molteplicità è $1:N$ in quanto un amministratore può creare più utenti Registrati, ma un utente Registrato può essere creato da un solo amministratore.
+	Associazione presente tra Registrato e Amministratore. \\
+	Un registrato (Arbitro e Gestore squadra) deve essere creato da uno degli amministratori. Per questo motivo è presente un vincolo di partecipazione totale dalla parte di registrato. Un registrato non può esistere se non è presente un amministratore che lo abbia creato.
+	La molteplicità è $1:N$ in quanto un amministratore può creare più utenti registrati, ma un utente registrato può essere creato da un solo amministratore.
 	
 	\subsection{Gestisce Torneo}
-	Associazione presente tra Amministratore e Torneo.
-	L’amministratore è l’unico a poter creare un torneo (ad Eliminazione diretta o all’Italiana). Per questo motivo è presente un vincolo di partecipazione totale dalla parte di Torneo. Un torneo non può esistere se non c’è un Amministratore che lo abbia creato.
+	Associazione presente tra Amministratore e Torneo. \\
+	L’amministratore è l’unico a poter creare un torneo (ad Eliminazione diretta o all'Italiana). Per questo motivo è presente un vincolo di partecipazione totale dalla parte di torneo. Un torneo non può esistere se non c’è un amministratore che lo abbia creato.
 	La molteplicità è $1:N$ in quanto un amministratore può creare molti tornei, ma un torneo può essere creato da un solo amministratore.
 	
 	\subsection{Compila}
-	Associazione presente tra Arbitro e Referto.
-	L'Arbitro, prima scelto da un amministratore, sarà colui che ``scrive'' il referto di una specifica partita.
-	È presente un vincolo di partecipazione totale dalla parte di referto, in quanto questo non può esistere se non è esiste una arbitro che può compilare tale referto.
+	Associazione presente tra Arbitro e Referto. \\
+	L'arbitro, scelto da un amministratore per una partita, sarà colui che compilerà il referto della partita.
+	È presente un vincolo di partecipazione totale dalla parte di referto, in quanto questo non può esistere se non è esiste un arbitro che può compilare tale referto.
 	La molteplicità è $1:N$ in quanto un arbitro può compilare $N$ referti ma un solo referto può essere compilato da un solo Arbitro.
 	
 	\subsection{Partecipa}
-	Associazione presente tra Torneo e Squadra.
+	Associazione presente tra Torneo e Squadra. \\
 	Indica a quali tornei partecipano le squadre e quali squadre partecipano ad un determinato torneo.
-	La partecipazione totale è dalla parte di torneo perché non può esistere se non sono presenti delle squadre che vi possano partecipare.
-	La molteplicità è $M:N$ in quanto una squadra può partecipare a più tornei ed un torneo può avere più squadre che vi partecipano, con un minimo di $2$ per un torneo ad eliminazione diretta e con un minimo di $4$ per un torneo all’italiana.
+	La partecipazione totale è dalla parte di Torneo perché non può esistere un Torneo se non sono presenti delle squadre che vi possano partecipare.
+	La molteplicità è $M:N$ in quanto una squadra può partecipare a più tornei e un torneo può avere più squadre che vi partecipano, con un minimo di $2$ per un torneo ad eliminazione diretta e con un minimo di $4$ per un torneo all'italiana.
 	
 	\subsection{Cartellino}
-	Associazione presente tra Arbitro e Giocatore.
+	Associazione presente tra Arbitro e Giocatore. \\
 	Indica chi sono i giocatori che hanno avuto un ammonizione o un'espulsione dall'arbitro.
-	Tale associazione presenta l’attributo Numero che specifica il numero di maglia del giocatore ammonito?
-	La partecipazione parziale in entrambe le parti perché può esistere un arbitro che non ha mai assegnato un ammonizione o un'espulsione e, viceversa, giocatore con nessuna ammonizione o espulsione da parte di un arbitro.
+	Tale associazione presenta l’attributo \emph{Numero} che specifica il numero di cartellini gialli assegnati ad un giocatore, l'attributo \emph{Ammonizione} che specifica se un giocatore è stato ammonito oppure no e l'attributo \emph{Espulsione} che specifica se un giocatore è stato espulso oppure no.
+	La partecipazione parziale da entrambi i lati perché può esistere un arbitro che non ha mai assegnato un ammonizione o un'espulsione e, viceversa, un giocatore con nessuna ammonizione o espulsione da parte di un arbitro.
 	La molteplicità è $M:N$ in quanto un arbitro può ammonire ed espellere più di un giocatore e viceversa.
 	
 	\subsection{Marcatore}
-	Associazione presente tra Referto e Giocatore.
+	Associazione presente tra Referto e Giocatore. \\
 	Indica chi sono i giocatori che hanno segnato un goal in un referto.
+	Tale associazione presenta l’attributo \emph{Goal} che specifica il numero di goal effettuati da un giocatore.
 	La partecipazione parziale in entrambe le parti perché può esistere un referto con nessun giocatore che ha segnato un goal.
-	La molteplicità è $M:N$ in quanto in un referto possono esserci più giocatori che segnano un goal e, viceversa, più giocatore possono segnare più goal.
+	La molteplicità è $M:N$ perché per ogni referto un giocatore segna dei goal e, viceversa, ogni giocatore può segnare dei goal in più referti.
 	
 	\subsection{Scelto}
-	Associazione ternaria presente tra Arbitro, Amministratore e Partita.
+	Associazione ternaria presente tra Arbitro, Amministratore e Partita. \\
 	Indica che un determinato arbitro è stato scelto da un determinato amministratore per una specifica partita.
-	Un arbitro può essere scelto per $N$ diverse partite e per ogni partita è scelto un singolo arbitro. Un amministratore può scegliere $N$ arbitri per $N$ diverse partite il ciò vuol dire che un arbitro arbitra una singola partita.
+	Un arbitro può essere scelto per $N$ diverse partite e per ogni partita è scelto un singolo arbitro. Un amministratore può scegliere $1$ arbitro per una delle $N$ partite, ovvero un arbitro può arbitrare solo una singola partita.
 	
 	\subsection{Formazione}
-	Associazione ternaria presente tra Squadra, Giocatore e Referto.
-	Serve per sapere chi sono i giocatori titolari più riserve che faranno parte alla formazione di una determinata partita.
-	Nell'associazione è presente un attributo (Riserva) che indica proprio le riserve della partita.
-	Se questo è uguale a ``Y'' allora il giocatore scelto sarà una riserva, in caso sia ``false'' il giocatore sarà un titolare.
+	Associazione ternaria presente tra Squadra, Giocatore e Referto. \\
+	Serve per sapere chi sono i giocatori titolari e chi sono le riserve che faranno parte alla formazione di una determinata partita.
+	Nell'associazione è presente l'attributo \emph{Riserva} che indica se un giocatore è una riserva oppure no.
+	Se l'attributo \emph{Riserva} è uguale a ``Y'' allora il giocatore scelto sarà una riserva, in caso sia ``N'' il giocatore sarà un titolare.
 	Per ogni referto sono fornite due formazioni, una per ogni squadra, composte da 18 giocatori ($11$ titolari e $7$ riserve).
 	
 	\subsection{Giocano}
-	Associazione ternaria presente tra Partita, Torneo e Squadra.
-	Indica quali squadre di un determinato torneo si devono affrontare. Tale associazione presenta l’attributo Nome\_partita che specifica il nome della fase o il nome della giornata dei tornei rispettivamente ad eliminazione diretta o all'italiana. Una partita viene giocata sempre da $2$ squadre e fa parte di un singolo torneo, in un torneo sono possibili $N$ partite. C’è un vincolo di partecipazione totale dalla parte di partita in quanto essa non può esistere se non è stato creato un torneo o sono presenti delle squadre.
+	Associazione ternaria presente tra Partita, Torneo e Squadra. \\
+	Indica quali squadre di un determinato torneo si devono affrontare. Tale associazione presenta l’attributo \emph{Numero\_giornata\_o\_fase} che specifica il numero della fase o il numero della giornata dei tornei rispettivamente ad eliminazione diretta o all'italiana. Una partita di un torneo viene giocata sempre da $2$ squadre e, in un torneo, sono possibili $N$ partite. È presente un vincolo di partecipazione totale dalla parte di partita in quanto una partita non può esistere se non è stato creato un torneo o non sono presenti delle squadre.
 	
 
 \section{Il modello E-R completo}
@@ -537,7 +538,7 @@ Per il modello E-R completo si veda la figura \vref{fig-modello-ER}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=0.83\textwidth,
+	\includegraphics[height=1\textwidth,
 	angle=90]
 	{immagini/diagramma-ER-completo}
 	

@@ -304,7 +304,7 @@ Tra le molte interrogazioni utilizzate dall'applicazione web riguardo il databas
 \subsection{INSERT}
 
 \subsection*{Inserimento di un nuovo arbitro}
-Quando l'amministratore inserisce un nuovo arbitro, viene settato nella tabella \emph{UTENTE} l'attributo \emph{Tipo} ``R'' (dall'inglese Refree). Le query che vengono eseguite sono tre perché \emph{ARBITRO} è una specializzazione dell'entità \emph{REGISTRATO} che a sua volta è una specializzazione dell'entità \emph{UTENTE}.
+Quando l'amministratore inserisce un nuovo arbitro, viene settato l'attributo \emph{Tipo} nella tabella \emph{UTENTE} ad ``R'' (dall'inglese Refree). Le query che vengono eseguite sono tre perché \emph{ARBITRO} è una specializzazione dell'entità \emph{REGISTRATO} che a sua volta è una specializzazione dell'entità \emph{UTENTE}.
 
 \subsubsection*{Inserimento utente}
 
@@ -380,8 +380,6 @@ UPDATE utente
 SET Attivo = 'N'
 WHERE Email = 'Conversion.getDatabaseString(email)';
 \end{lstlisting}
-
-\newpage
 
 \subsection{SELECT}
 
